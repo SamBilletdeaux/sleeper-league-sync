@@ -11,8 +11,13 @@ from typing import Any, Iterable
 # player map has ~11k entries; publishing all of them produced a 1.6 MB file that
 # no chat model will read. Sleeper's `search_rank` is a decent relevance proxy
 # (lower is better), so take the top slice per position.
-FREE_AGENT_LIMITS: dict[str, int] = {"QB": 60, "RB": 100, "WR": 100, "TE": 60, "K": 25}
+FREE_AGENT_LIMITS: dict[str, int] = {"QB": 60, "RB": 100, "WR": 100, "TE": 60, "K": 25, "DEF": 32}
 UNRANKED = 10**9
+
+# Sleeper gives team defenses no search_rank, so the relevance filter used for
+# skill players would discard every one of them. There are only 32 and streaming
+# them is routine waiver work, so list them all and sort by name instead.
+RANKLESS_POSITIONS = frozenset({"DEF"})
 
 
 def compact_player(player_id: Any, players: dict[str, dict[str, Any]]) -> dict[str, Any]:
@@ -196,7 +201,7 @@ def build_free_agents(
         matched = positions & set(limits)
         if not matched:
             continue
-        if _rank_of(raw) == UNRANKED:
+        if _rank_of(raw) == UNRANKED and not (matched & RANKLESS_POSITIONS):
             continue  # Unranked players are camp bodies; they only add noise.
         compact = compact_player(pid, players)
         for pos in matched:

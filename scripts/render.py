@@ -89,6 +89,12 @@ def render_markdown(snapshot: dict[str, Any]) -> str:
     if league.get("starting_lineup"):
         lineup = ", ".join(league["starting_lineup"])
         add(f"- Starting lineup ({len(league['starting_lineup'])} slots): {lineup}")
+        if "SUPER_FLEX" in league["starting_lineup"]:
+            add(
+                "- **Superflex league.** The SUPER_FLEX slot accepts a quarterback, so most "
+                "teams start two. This raises quarterback value sharply relative to a "
+                "standard league — weigh that in any trade or roster analysis."
+            )
     add(f"- Bench slots: {league.get('bench_slots')}")
     if league.get("taxi_slots"):
         add(f"- Taxi squad slots: {league['taxi_slots']}")

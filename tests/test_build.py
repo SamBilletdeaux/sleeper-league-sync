@@ -153,6 +153,26 @@ class FreeAgentTests(unittest.TestCase):
         names = {p["name"] for rows in self.free.values() for p in rows}
         self.assertFalse({n for n in names if n.startswith("Camp Body")})
 
+    def test_team_defenses_are_listed_despite_having_no_search_rank(self):
+        """Sleeper gives DEF entries no search_rank; the relevance filter must not eat them."""
+        players = {
+            "DET": {"first_name": "Detroit", "last_name": "Lions", "position": "DEF",
+                    "fantasy_positions": ["DEF"], "team": "DET", "active": True,
+                    "search_rank": None},
+            "SEA": {"first_name": "Seattle", "last_name": "Seahawks", "position": "DEF",
+                    "fantasy_positions": ["DEF"], "team": "SEA", "active": True,
+                    "search_rank": None},
+        }
+        rosters = [{"roster_id": 1, "owner_id": "u1", "players": ["SEA"], "settings": {}}]
+        teams = model.build_teams([], rosters, players, {"settings": {}})
+        free = model.build_free_agents(players, teams)
+        self.assertEqual([p["name"] for p in free["DEF"]], ["Detroit Lions"])
+
+    def test_rankless_filter_still_excludes_unranked_skill_players(self):
+        players = {"7": {"first_name": "Camp", "last_name": "Body", "position": "WR",
+                         "fantasy_positions": ["WR"], "active": True, "search_rank": None}}
+        self.assertEqual(model.build_free_agents(players, [])["WR"], [])
+
     def test_inactive_players_excluded(self):
         players = {"9": {"full_name": "Retired Guy", "position": "RB",
                          "fantasy_positions": ["RB"], "active": False, "search_rank": 1}}
@@ -276,6 +296,18 @@ class EndToEndTests(unittest.TestCase):
                         "## Rosters", "## Future rookie draft picks",
                         "## Top available free agents", "## Live data"):
             self.assertIn(heading, self.markdown)
+
+    def test_superflex_is_called_out_when_present(self):
+        snapshot = dict(self.snapshot)
+        snapshot["league"] = dict(snapshot["league"])
+        snapshot["league"]["starting_lineup"] = ["QB", "RB", "WR", "SUPER_FLEX"]
+        self.assertIn("Superflex league", render.render_markdown(snapshot))
+
+    def test_superflex_note_absent_in_a_standard_league(self):
+        snapshot = dict(self.snapshot)
+        snapshot["league"] = dict(snapshot["league"])
+        snapshot["league"]["starting_lineup"] = ["QB", "RB", "WR", "FLEX"]
+        self.assertNotIn("Superflex league", render.render_markdown(snapshot))
 
     def test_live_section_warns_against_the_5mb_player_map(self):
         self.assertIn("Do not fetch", self.markdown)
