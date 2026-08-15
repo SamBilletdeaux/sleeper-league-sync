@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KingKings Fantasy Football — LLM brief</title>
+<style>
+  :root {
+    --bg: #fbfbfa; --fg: #1a1a18; --muted: #6b6b66;
+    --card: #ffffff; --border: #e3e3df; --accent: #7c4dff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17171a; --fg: #ececea; --muted: #9b9b95;
+      --card: #212125; --border: #33333a; --accent: #a98bff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 3rem 1.25rem; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  .sub { color: var(--muted); margin: 0 0 2.25rem; }
+  h2 { font-size: 1.05rem; margin: 2.25rem 0 .75rem; letter-spacing: -.01em; }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1.1rem 1.25rem;
+  }
+  code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .875rem; }
+  pre { margin: 0; white-space: pre-wrap; word-break: break-word; }
+  a { color: var(--accent); }
+  ol { padding-left: 1.25rem; }
+  li { margin: .4rem 0; }
+  .files { list-style: none; padding: 0; }
+  .files li { padding: .55rem 0; border-bottom: 1px solid var(--border); }
+  .files li:last-child { border-bottom: 0; }
+  .files span { color: var(--muted); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>KingKings Fantasy Football</h1>
+  <p class="sub">
+    A live brief for 10 teams, built for AI assistants.<br>
+    Updated 2026-08-15T18:58:59Z UTC · refreshes every 6 hours.
+  </p>
+
+  <h2>Ask an AI about your league</h2>
+  <p>Paste this into ChatGPT, Claude, Gemini, or any assistant that can browse the web:</p>
+  <div class="card"><pre>Read https://sambilletdeaux.github.io/sleeper-league-sync/league.md and use it to answer my questions about my dynasty fantasy football league.</pre></div>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>A GitHub Action pulls this league from the public Sleeper API every 6 hours.</li>
+    <li>It writes a compact, fully-readable brief &mdash; rosters with real player names,
+        standings, future rookie picks, and top free agents.</li>
+    <li>The brief also tells the assistant how to query Sleeper directly, so it can pull
+        genuinely live data when your question needs something newer than the snapshot.</li>
+  </ol>
+
+  <h2>Files</h2>
+  <ul class="files">
+    <li><a href="league.md">league.md</a> <span>&mdash; the brief. This is the one to share.</span></li>
+    <li><a href="league.json">league.json</a> <span>&mdash; same data, structured, for tools and scripts.</span></li>
+  </ul>
+
+  <footer>
+    No account needed &mdash; these files are public.
+    Source on <a href="https://github.com/SamBilletdeaux/sleeper-league-sync">GitHub</a>.
+  </footer>
+</main>
+</body>
+</html>
