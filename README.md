@@ -19,14 +19,17 @@ the most 2027 firsts, who's worth a waiver claim.
 
 ## How it works
 
-A GitHub Action runs every 6 hours, pulls the league from the public Sleeper API, and publishes
-three files to GitHub Pages:
+A GitHub Action runs every 6 hours, pulls the league from the public Sleeper API, and commits
+three files to the repo root, which is what GitHub Pages serves:
 
 | File | What it is |
 |---|---|
-| `league.md` | **The brief.** Self-contained, ~40 KB, written to be read by a language model in one fetch |
+| `league.md` | **The brief.** Self-contained, ~34 KB, written to be read by a language model in one fetch |
 | `league.json` | The same data, structured, for scripts and tools |
 | `index.html` | A human landing page with the copy-paste prompt |
+
+(A fourth file, `.nojekyll`, tells Pages to serve these as static files instead of running them
+through Jekyll — without it, Jekyll renders `README.md` as the landing page and `league.md` 404s.)
 
 `league.md` contains league settings and scoring, standings, every roster with real player names,
 future rookie pick ownership after trades, and the top available free agents by position.
@@ -42,8 +45,20 @@ Two deliberate constraints keep it usable:
 - **The brief is size-capped.** The build warns above 120 KB and fails above 250 KB. Publishing every
   free agent would produce a 1.6 MB file that no chat model will ingest, so free agent lists are
   truncated by Sleeper's `search_rank`.
-- **Nothing is committed to git.** The site deploys as a Pages artifact, so refreshing four times a
-  day forever adds nothing to the repository history.
+- **The committed output stays small.** Four refreshes a day at ~34 KB is roughly 136 KB/day of
+  history. That is affordable; publishing every free agent every 15 minutes, as an earlier draft
+  did, would have been ~422 MB/day.
+
+### Why commit instead of deploying a Pages artifact?
+
+Pages can be served either from a branch or from a workflow artifact. The artifact route keeps
+generated files out of git entirely, and is objectively tidier — but it requires
+*Settings → Pages → Source* to be set to **GitHub Actions**. This repo is on the default
+**Deploy from a branch**, so committing to `main` is what actually reaches the web.
+
+If you ever switch that setting, swap the `Commit and push` step back to
+`actions/upload-pages-artifact@v3` + `actions/deploy-pages@v4`, change `permissions` from
+`contents: write` to `pages: write` / `id-token: write`, and build to `--out site` again.
 
 The build also follows dynasty season rollover automatically: Sleeper mints a new `league_id` every
 season, so the script walks `previous_league_id` from the configured root to find the current one.

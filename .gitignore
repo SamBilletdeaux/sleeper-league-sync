@@ -1,7 +1,8 @@
 # Cached Sleeper player map (~5 MB) — restored by the Actions cache, never committed
 .cache/
 
-# Build output — deployed to Pages as an artifact, not committed
+# Local build output. The workflow builds to the repo root instead (that is what
+# GitHub Pages serves); `--out site` is just the convenient default for local runs.
 site/
 build.log
 

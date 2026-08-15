@@ -13,13 +13,13 @@ on:
       - "tests/**"
       - ".github/workflows/publish.yml"
 
+# Needed to commit the rebuilt brief back to main, which is what GitHub Pages
+# serves. See README for why this publishes by commit rather than by artifact.
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: pages
+  group: publish-league-brief
   cancel-in-progress: false
 
 env:
@@ -28,11 +28,13 @@ env:
   SITE_URL: "https://sambilletdeaux.github.io/sleeper-league-sync"
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -54,8 +56,32 @@ jobs:
           path: .cache/players_nfl.json
           key: sleeper-players-${{ steps.cachekey.outputs.date }}
 
-      - name: Build site
-        run: python3 scripts/build.py --out site | tee build.log
+      # Writes index.html, league.md, league.json and .nojekyll to the repo
+      # root, which is the directory Pages serves.
+      - name: Build brief
+        run: python3 scripts/build.py --out . | tee build.log
+
+      - name: Commit and push
+        run: |
+          git config user.name "sleeper-refresh-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html league.md league.json .nojekyll
+          if git diff --cached --quiet; then
+            echo "Brief unchanged since last run; nothing to commit."
+            exit 0
+          fi
+          git commit -m "Refresh league brief ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          for attempt in 1 2 3 4; do
+            if git push origin HEAD:main; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push failed (attempt $attempt); rebasing on origin/main and retrying."
+            git pull --rebase origin main || true
+            sleep $((2 ** attempt))
+          done
+          echo "::error::Could not push the refreshed brief after 4 attempts."
+          exit 1
 
       - name: Job summary
         if: always()
@@ -66,18 +92,6 @@ jobs:
             echo '```'
             cat build.log 2>/dev/null || echo 'build produced no output'
             echo '```'
+            echo ''
+            echo "Published to ${SITE_URL}/league.md"
           } >> "$GITHUB_STEP_SUMMARY"
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
