@@ -173,6 +173,45 @@ class CompactPlayerTests(unittest.TestCase):
         self.assertEqual(model.compact_many(["0", "0"], {}), [])
 
 
+class RealWorldShapeTests(unittest.TestCase):
+    """Shapes the live API returns that the generated fixtures don't cover."""
+
+    def test_team_defenses_keyed_by_abbreviation_not_a_numeric_id(self):
+        players = {"KC": {"first_name": "Kansas City", "last_name": "Chiefs",
+                          "position": "DEF", "fantasy_positions": ["DEF"],
+                          "team": "KC", "active": True, "search_rank": 200}}
+        rosters = [{"roster_id": 1, "owner_id": "u1", "players": ["KC"],
+                    "starters": ["KC"], "settings": {}}]
+        teams = model.build_teams([], rosters, players, {"settings": {}})
+        self.assertEqual(teams[0]["starters"][0]["name"], "Kansas City Chiefs")
+        self.assertIn("KC Kansas City Chiefs", render._roster_block(teams[0])[1])
+
+    def test_empty_starter_slots_are_dropped(self):
+        rosters = [{"roster_id": 1, "owner_id": "u1", "players": ["1", "0"],
+                    "starters": ["1", "0", "0"], "settings": {}}]
+        teams = model.build_teams([], rosters, {}, {"settings": {}})
+        self.assertEqual(len(teams[0]["starters"]), 1)
+        self.assertEqual(teams[0]["player_ids"], ["1"])
+
+    def test_null_collections_do_not_crash(self):
+        rosters = [{"roster_id": 1, "owner_id": "u1", "players": None,
+                    "starters": None, "taxi": None, "reserve": None, "settings": None}]
+        teams = model.build_teams([], rosters, {}, {"settings": {}})
+        self.assertEqual(teams[0]["player_ids"], [])
+        self.assertIsNone(teams[0]["faab_left"])
+
+    def test_user_metadata_may_be_null(self):
+        users = [{"user_id": "u1", "display_name": "sam", "metadata": None}]
+        rosters = [{"roster_id": 1, "owner_id": "u1", "players": [], "settings": {}}]
+        self.assertEqual(model.build_teams(users, rosters, {}, {"settings": {}})[0]["team_name"], "sam")
+
+    def test_player_missing_from_the_map_degrades_instead_of_crashing(self):
+        rosters = [{"roster_id": 1, "owner_id": "u1", "players": ["77"],
+                    "starters": ["77"], "settings": {}}]
+        teams = model.build_teams([], rosters, {}, {"settings": {}})
+        self.assertEqual(teams[0]["starters"][0]["name"], "Unknown player 77")
+
+
 class RolloverTests(unittest.TestCase):
     """A dynasty league gets a new league_id every season; the build has to follow it."""
 
