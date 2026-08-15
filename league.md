@@ -1,6 +1,6 @@
 # KingKings Fantasy Football — league brief
 
-Snapshot generated **2026-08-15T18:58:59Z** (UTC).
+Snapshot generated **2026-08-15T19:01:55Z** (UTC).
 Season **2026**, NFL week **1**. League id `1359238964875132928`.
 
 > **Read this first.** This file is a point-in-time snapshot of a Sleeper dynasty fantasy football league, written for an AI assistant to answer questions about. Rosters, standings, draft picks and free agents below were current as of the timestamp above. If the question depends on something that may have changed since then, see **Live data** at the end of this file for the exact URLs to fetch. Every player is listed as `<sleeper_id> <name>`, so you can decode player ids in any live API response using the tables in this document.
@@ -9,6 +9,7 @@ Season **2026**, NFL week **1**. League id `1359238964875132928`.
 
 - Teams: 10
 - Starting lineup (11 slots): QB, RB, RB, WR, WR, TE, FLEX, FLEX, SUPER_FLEX, K, DEF
+- **Superflex league.** The SUPER_FLEX slot accepts a quarterback, so most teams start two. This raises quarterback value sharply relative to a standard league — weigh that in any trade or roster analysis.
 - Bench slots: 10
 - Taxi squad slots: 3
 - FAAB budget: 100 per team per season
@@ -805,6 +806,30 @@ Unrostered players, ranked by Sleeper's search rank (a popularity/relevance prox
 - 10858 Alex Quevedo (K, FA, 24yo)
 - 3909 Sam Ficken (K, FA, 30yo)
 
+### DEF (21)
+
+- ARI Arizona Cardinals (DEF, ARI)
+- ATL Atlanta Falcons (DEF, ATL)
+- BAL Baltimore Ravens (DEF, BAL)
+- BUF Buffalo Bills (DEF, BUF)
+- CAR Carolina Panthers (DEF, CAR)
+- CIN Cincinnati Bengals (DEF, CIN)
+- CLE Cleveland Browns (DEF, CLE)
+- DEN Denver Broncos (DEF, DEN)
+- GB Green Bay Packers (DEF, GB)
+- IND Indianapolis Colts (DEF, IND)
+- KC Kansas City Chiefs (DEF, KC)
+- LV Las Vegas Raiders (DEF, LV)
+- LAC Los Angeles Chargers (DEF, LAC)
+- MIA Miami Dolphins (DEF, MIA)
+- MIN Minnesota Vikings (DEF, MIN)
+- NO New Orleans Saints (DEF, NO)
+- NYG New York Giants (DEF, NYG)
+- NYJ New York Jets (DEF, NYJ)
+- PIT Pittsburgh Steelers (DEF, PIT)
+- TEN Tennessee Titans (DEF, TEN)
+- WAS Washington Commanders (DEF, WAS)
+
 ## Most added across Sleeper (last 24h)
 
 - 2505 Darren Waller (TE, CAR, 33yo) · 64440 transactions — already rostered in this league
@@ -863,7 +888,7 @@ Unrostered players, ranked by Sleeper's search rank (a popularity/relevance prox
 
 ## Live data
 
-Everything above was captured at 2026-08-15T18:58:59Z UTC. If the question depends on something more recent — a waiver claim that just processed, a trade from this morning, current scoring — fetch these directly:
+Everything above was captured at 2026-08-15T19:01:55Z UTC. If the question depends on something more recent — a waiver claim that just processed, a trade from this morning, current scoring — fetch these directly:
 
 - **Current rosters:** `https://api.sleeper.app/v1/league/1359238964875132928/rosters`
 - **League info and settings:** `https://api.sleeper.app/v1/league/1359238964875132928`
