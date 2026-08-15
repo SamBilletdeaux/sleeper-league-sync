@@ -1,0 +1,10 @@
+# Cached Sleeper player map (~5 MB) — restored by the Actions cache, never committed
+.cache/
+
+# Build output — deployed to Pages as an artifact, not committed
+site/
+build.log
+
+__pycache__/
+*.py[cod]
+.venv/

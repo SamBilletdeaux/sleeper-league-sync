@@ -1,0 +1,83 @@
+name: Publish league brief
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Every 6 hours. The league is not volatile enough to warrant more, and
+    # anything genuinely live is fetched from Sleeper by the reader instead.
+    - cron: "0 */6 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "tests/**"
+      - ".github/workflows/publish.yml"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  SLEEPER_LEAGUE_ID: "1359238964875132928"
+  SLEEPER_USER_ID: "1260412048202813440"
+  SITE_URL: "https://sambilletdeaux.github.io/sleeper-league-sync"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run tests
+        run: python3 -m unittest discover -s tests
+
+      - name: Date-stamp the player cache key
+        id: cachekey
+        run: echo "date=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+      # Sleeper asks that /players/nfl (~5 MB) be called at most once a day.
+      # A date-keyed cache with no restore-keys gives exactly that: the first
+      # run each day misses and refetches, the rest of the day hits.
+      - name: Restore player map cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/players_nfl.json
+          key: sleeper-players-${{ steps.cachekey.outputs.date }}
+
+      - name: Build site
+        run: python3 scripts/build.py --out site | tee build.log
+
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo '### Sleeper league brief'
+            echo ''
+            echo '```'
+            cat build.log 2>/dev/null || echo 'build produced no output'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
