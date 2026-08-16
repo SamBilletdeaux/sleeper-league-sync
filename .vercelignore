@@ -1,0 +1,16 @@
+# The raw ~16 MB Sleeper player map. Only the pruned data/players.json ships.
+.cache/
+
+# Static mirror output, published by GitHub Pages rather than Vercel.
+site/
+league.md
+league.html
+league.json
+index.html
+.nojekyll
+
+tests/
+build.log
+__pycache__/
+*.py[cod]
+.venv/

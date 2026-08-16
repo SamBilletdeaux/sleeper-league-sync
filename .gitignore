@@ -1,11 +1,14 @@
-# Cached Sleeper player map (~5 MB) — restored by the Actions cache, never committed
+# Cached raw Sleeper player map (~16 MB) — restored by the Actions cache, never
+# committed. The pruned data/players.json is what ships.
 .cache/
 
-# Local build output. The workflow builds to the repo root instead (that is what
-# GitHub Pages serves); `--out site` is just the convenient default for local runs.
+# Local build output. The workflow writes the static mirror to the repo root
+# instead (that is what GitHub Pages serves); `--out site` is just the
+# convenient default for local runs.
 site/
 build.log
 
 __pycache__/
 *.py[cod]
 .venv/
+.vercel

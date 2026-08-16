@@ -1,11 +1,13 @@
-name: Publish league brief
+name: Refresh player data and static mirror
 
 on:
   workflow_dispatch:
   schedule:
-    # Every 6 hours. The league is not volatile enough to warrant more, and
-    # anything genuinely live is fetched from Sleeper by the reader instead.
-    - cron: "0 */6 * * *"
+    # Once a day. This job now only maintains slow-moving data: the pruned
+    # player dictionary the live renderer joins against, plus a static mirror.
+    # Anything volatile is fetched per request by the Vercel function, so there
+    # is nothing here that benefits from running more often.
+    - cron: "20 9 * * *"
   push:
     branches: [main]
     paths:
@@ -13,30 +15,32 @@ on:
       - "tests/**"
       - ".github/workflows/publish.yml"
 
-# Needed to commit the rebuilt brief back to main, which is what GitHub Pages
-# serves. See README for why this publishes by commit rather than by artifact.
+# Needed to commit data/players.json and the static mirror back to main. The
+# push also triggers a Vercel redeploy, which is how the live site picks up a
+# refreshed player dictionary.
 permissions:
   contents: write
 
 concurrency:
-  group: publish-league-brief
+  group: refresh-league-data
   cancel-in-progress: false
 
 env:
   SLEEPER_LEAGUE_ID: "1359238964875132928"
   SLEEPER_USER_ID: "1260412048202813440"
   SITE_URL: "https://sambilletdeaux.github.io/sleeper-league-sync"
+  LIVE_URL: "https://kingkings.vercel.app"
 
 jobs:
-  publish:
+  refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -47,30 +51,33 @@ jobs:
         id: cachekey
         run: echo "date=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
 
-      # Sleeper asks that /players/nfl (~5 MB) be called at most once a day.
-      # A date-keyed cache with no restore-keys gives exactly that: the first
-      # run each day misses and refetches, the rest of the day hits.
+      # Sleeper asks that /players/nfl (~16 MB) be called at most once a day.
+      # A date-keyed cache with no restore-keys gives exactly that.
       - name: Restore player map cache
         uses: actions/cache@v4
         with:
           path: .cache/players_nfl.json
           key: sleeper-players-${{ steps.cachekey.outputs.date }}
 
-      # Writes index.html, league.md, league.json and .nojekyll to the repo
-      # root, which is the directory Pages serves.
-      - name: Build brief
-        run: python3 scripts/build.py --out . | tee build.log
+      # ~16 MB of players down to the ~1,000 this league could reference.
+      # Everything the live renderer knows about a player comes from this file.
+      - name: Prune the player dictionary
+        run: python3 scripts/prune_players.py --out data/players.json | tee build.log
+
+      # A fallback that keeps working if Vercel or Sleeper is unavailable.
+      - name: Build the static mirror
+        run: python3 scripts/build.py --out . | tee -a build.log
 
       - name: Commit and push
         run: |
           git config user.name "sleeper-refresh-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html league.md league.json .nojekyll
+          git add data/players.json index.html league.md league.html league.json .nojekyll
           if git diff --cached --quiet; then
-            echo "Brief unchanged since last run; nothing to commit."
+            echo "Nothing changed since the last run."
             exit 0
           fi
-          git commit -m "Refresh league brief ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git commit -m "Refresh league data ($(date -u +'%Y-%m-%d %H:%M UTC'))"
           for attempt in 1 2 3 4; do
             if git push origin HEAD:main; then
               echo "Pushed on attempt $attempt."
@@ -80,18 +87,35 @@ jobs:
             git pull --rebase origin main || true
             sleep $((2 ** attempt))
           done
-          echo "::error::Could not push the refreshed brief after 4 attempts."
+          echo "::error::Could not push the refreshed data after 4 attempts."
           exit 1
+
+      # The live site is the product; a green job that leaves it broken is worse
+      # than a red one, so fail here if it is not actually serving the brief.
+      - name: Check the live site is serving the brief
+        run: |
+          code=$(curl -sS -o /tmp/live.html -w '%{http_code}' "$LIVE_URL/" || echo 000)
+          if [ "$code" != "200" ]; then
+            echo "::error::$LIVE_URL/ returned $code"
+            exit 1
+          fi
+          if ! grep -q "roster_id" /tmp/live.html; then
+            echo "::error::$LIVE_URL/ returned 200 but contains no league data"
+            exit 1
+          fi
+          echo "Live site OK ($(wc -c < /tmp/live.html) bytes)."
 
       - name: Job summary
         if: always()
         run: |
           {
-            echo '### Sleeper league brief'
+            echo '### Sleeper league data refresh'
             echo ''
             echo '```'
             cat build.log 2>/dev/null || echo 'build produced no output'
             echo '```'
             echo ''
-            echo "Published to ${SITE_URL}/league.md"
+            echo "Live brief: ${LIVE_URL}"
+            echo ''
+            echo "Static mirror: ${SITE_URL}/league.html"
           } >> "$GITHUB_STEP_SUMMARY"

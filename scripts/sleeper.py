@@ -15,6 +15,7 @@ import json
 import os
 import re
 import time
+from concurrent import futures
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -61,6 +62,22 @@ class SleeperClient:
                 time.sleep(1.5 * (attempt + 1))
         raise SleeperError(f"GET {url} failed after {self.retries} attempts: {last_error}")
 
+    def get_many(self, paths: dict[str, str]) -> dict[str, Any]:
+        """Fetch several endpoints concurrently, keyed by caller-chosen name.
+
+        A rendered page needs about a dozen endpoints. Sequentially that is
+        ~450ms of mostly-waiting; concurrently it is closer to one round trip.
+        A failure on any one path raises, matching ``get``.
+        """
+        if not paths:
+            return {}
+        results: dict[str, Any] = {}
+        with futures.ThreadPoolExecutor(max_workers=min(8, len(paths))) as pool:
+            pending = {pool.submit(self.get, path): name for name, path in paths.items()}
+            for future in futures.as_completed(pending):
+                results[pending[future]] = future.result()
+        return results
+
     def players(self) -> dict[str, dict[str, Any]]:
         """The full NFL player map, cached on disk between runs."""
         cache = self.cache_dir / "players_nfl.json"
@@ -104,6 +121,9 @@ class FixtureClient:
         (r"^/league/[^/]+/users$", "users"),
         (r"^/league/[^/]+/rosters$", "rosters"),
         (r"^/league/[^/]+/traded_picks$", "traded_picks"),
+        (r"^/league/[^/]+/matchups/[^/]+$", "matchups"),
+        (r"^/league/[^/]+/transactions/[^/]+$", "transactions"),
+        (r"^/league/[^/]+/winners_bracket$", "winners_bracket"),
         (r"^/league/[^/]+$", "league"),
     ]
 
@@ -111,6 +131,7 @@ class FixtureClient:
         self.fixture_dir = Path(fixture_dir)
 
     def _name_for(self, path: str) -> str:
+        path = path.split("?", 1)[0]
         for pattern, name in self._ROUTES:
             if re.match(pattern, path):
                 return name
@@ -122,6 +143,9 @@ class FixtureClient:
             raise SleeperError(f"missing fixture {target}")
         with target.open(encoding="utf-8") as handle:
             return json.load(handle)
+
+    def get_many(self, paths: dict[str, str]) -> dict[str, Any]:
+        return {name: self.get(path) for name, path in paths.items()}
 
     def players(self) -> dict[str, dict[str, Any]]:
         return self.get("/players/nfl")
@@ -145,6 +169,12 @@ def resolve_current_league(client: Any, root_league_id: str, user_id: str) -> di
     for value in (state.get("league_season"), state.get("season"), root.get("season")):
         if value and str(value) not in seasons:
             seasons.append(str(value))
+
+    # Fast path: a league whose season is the current one and which has not been
+    # marked complete is already current, so skip the user-leagues lookup. This
+    # is the case on every request except the days right after a rollover.
+    if seasons and str(root.get("season")) == seasons[0] and root.get("status") != "complete":
+        return root
 
     for season in seasons:
         leagues = client.get(f"/user/{user_id}/leagues/nfl/{season}") or []

@@ -1,0 +1,85 @@
+[
+  {
+    "transaction_id": "t1",
+    "type": "free_agent",
+    "status": "complete",
+    "status_updated": 1786635205407,
+    "roster_ids": [
+      1
+    ],
+    "adds": {
+      "1011": 1
+    },
+    "drops": {
+      "1012": 1
+    },
+    "draft_picks": [],
+    "waiver_budget": [],
+    "leg": 1
+  },
+  {
+    "transaction_id": "t2",
+    "type": "waiver",
+    "status": "complete",
+    "status_updated": 1786635105407,
+    "roster_ids": [
+      2
+    ],
+    "adds": {
+      "1013": 2
+    },
+    "drops": null,
+    "draft_picks": [],
+    "waiver_budget": [],
+    "leg": 1
+  },
+  {
+    "transaction_id": "t3",
+    "type": "trade",
+    "status": "complete",
+    "status_updated": 1786634205407,
+    "roster_ids": [
+      1,
+      2
+    ],
+    "adds": {
+      "1014": 2
+    },
+    "drops": {
+      "1014": 1
+    },
+    "draft_picks": [
+      {
+        "season": "2027",
+        "round": 1,
+        "roster_id": 2,
+        "owner_id": 1,
+        "previous_owner_id": 2
+      }
+    ],
+    "waiver_budget": [
+      {
+        "sender": 2,
+        "receiver": 1,
+        "amount": 12
+      }
+    ],
+    "leg": 1
+  },
+  {
+    "transaction_id": "t4",
+    "type": "free_agent",
+    "status": "failed",
+    "status_updated": 1786634105407,
+    "roster_ids": [
+      3
+    ],
+    "adds": {
+      "1011": 3
+    },
+    "drops": null,
+    "draft_picks": [],
+    "waiver_budget": [],
+    "leg": 1
+  }
+]
