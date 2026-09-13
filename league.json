@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T12:54:18Z",
+  "generated_at": "2026-09-13T13:49:39Z",
   "source": "Sleeper API (public, read-only)",
   "root_league_id": "1359238964875132928",
   "followed_season_rollover": false,
@@ -182,7 +182,7 @@
           "age": 31,
           "exp": 10,
           "injury": null,
-          "rank": 61
+          "rank": 62
         },
         {
           "id": "8167",
@@ -355,7 +355,7 @@
           "team": "PHI",
           "age": 23,
           "exp": 0,
-          "injury": "Questionable",
+          "injury": "IR",
           "rank": 140
         }
       ],
@@ -434,7 +434,7 @@
           "age": 26,
           "exp": 5,
           "injury": null,
-          "rank": 7
+          "rank": 6
         },
         {
           "id": "4881",
@@ -504,7 +504,7 @@
           "age": 29,
           "exp": 7,
           "injury": null,
-          "rank": 89
+          "rank": 88
         },
         {
           "id": "12961",
@@ -566,7 +566,7 @@
           "age": 23,
           "exp": 1,
           "injury": null,
-          "rank": 104
+          "rank": 103
         },
         {
           "id": "5870",
@@ -576,7 +576,7 @@
           "age": 29,
           "exp": 7,
           "injury": null,
-          "rank": 131
+          "rank": 130
         },
         {
           "id": "9504",
@@ -596,7 +596,7 @@
           "age": 33,
           "exp": 9,
           "injury": null,
-          "rank": 196
+          "rank": 195
         },
         {
           "id": "13319",
@@ -606,7 +606,7 @@
           "age": 23,
           "exp": 0,
           "injury": "Out",
-          "rank": 459
+          "rank": 457
         }
       ],
       "taxi": [
@@ -818,7 +818,7 @@
           "age": 23,
           "exp": 2,
           "injury": null,
-          "rank": 131
+          "rank": 132
         },
         {
           "id": "JAX",
@@ -880,7 +880,7 @@
           "age": 26,
           "exp": 4,
           "injury": null,
-          "rank": 107
+          "rank": 108
         },
         {
           "id": "9500",
@@ -900,7 +900,7 @@
           "age": 27,
           "exp": 4,
           "injury": null,
-          "rank": 120
+          "rank": 119
         },
         {
           "id": "7049",
@@ -930,7 +930,7 @@
           "age": 25,
           "exp": 3,
           "injury": null,
-          "rank": 204
+          "rank": 202
         }
       ],
       "taxi": [
@@ -1050,7 +1050,7 @@
           "age": 25,
           "exp": 2,
           "injury": null,
-          "rank": 20
+          "rank": 21
         },
         {
           "id": "10229",
@@ -1070,7 +1070,7 @@
           "age": 24,
           "exp": 2,
           "injury": null,
-          "rank": 35
+          "rank": 34
         },
         {
           "id": "12481",
@@ -1100,27 +1100,17 @@
           "age": 23,
           "exp": 0,
           "injury": "Out",
-          "rank": 112
+          "rank": 111
         },
         {
-          "id": "12502",
-          "name": "Gunnar Helm",
+          "id": "9482",
+          "name": "Michael Mayer",
           "pos": "TE",
-          "team": "TEN",
-          "age": 24,
-          "exp": 1,
+          "team": "LV",
+          "age": 25,
+          "exp": 3,
           "injury": null,
-          "rank": 153
-        },
-        {
-          "id": "13545",
-          "name": "Trey Smack",
-          "pos": "K",
-          "team": "GB",
-          "age": 23,
-          "exp": 0,
-          "injury": null,
-          "rank": 194
+          "rank": 475
         }
       ],
       "bench": [
@@ -1165,6 +1155,16 @@
           "rank": 119
         },
         {
+          "id": "12502",
+          "name": "Gunnar Helm",
+          "pos": "TE",
+          "team": "TEN",
+          "age": 24,
+          "exp": 1,
+          "injury": null,
+          "rank": 153
+        },
+        {
           "id": "13414",
           "name": "Kaelon Black",
           "pos": "RB",
@@ -1172,7 +1172,7 @@
           "age": 24,
           "exp": 0,
           "injury": null,
-          "rank": 162
+          "rank": 161
         },
         {
           "id": "11618",
@@ -1212,7 +1212,7 @@
           "age": 23,
           "exp": 0,
           "injury": null,
-          "rank": 179
+          "rank": 181
         },
         {
           "id": "13425",
@@ -1264,7 +1264,7 @@
           "age": 23,
           "exp": 0,
           "injury": null,
-          "rank": 290
+          "rank": 289
         }
       ],
       "reserve": [
@@ -1314,7 +1314,7 @@
         "13414",
         "13417",
         "13425",
-        "13545",
+        "9482",
         "9502"
       ],
       "profile": {
@@ -1323,10 +1323,9 @@
           "QB": 4,
           "RB": 7,
           "WR": 11,
-          "TE": 3,
-          "K": 1
+          "TE": 4
         },
-        "average_age": 23.3,
+        "average_age": 23.4,
         "age_25_and_under": 24
       }
     },
@@ -1394,7 +1393,7 @@
           "age": 22,
           "exp": 1,
           "injury": null,
-          "rank": 35
+          "rank": 37
         },
         {
           "id": "12526",
@@ -1414,7 +1413,7 @@
           "age": 26,
           "exp": 4,
           "injury": null,
-          "rank": 56
+          "rank": 55
         },
         {
           "id": "7611",
@@ -1444,7 +1443,7 @@
           "age": 24,
           "exp": 1,
           "injury": null,
-          "rank": 114
+          "rank": 113
         },
         {
           "id": "HOU",
@@ -1506,14 +1505,14 @@
           "age": 25,
           "exp": 2,
           "injury": null,
-          "rank": 97
+          "rank": 98
         },
         {
           "id": "7002",
           "name": "Juwan Johnson",
           "pos": "TE",
           "team": "NO",
-          "age": 29,
+          "age": 30,
           "exp": 6,
           "injury": null,
           "rank": 103
@@ -1526,7 +1525,7 @@
           "age": 32,
           "exp": 11,
           "injury": null,
-          "rank": 107
+          "rank": 106
         },
         {
           "id": "13305",
@@ -1536,7 +1535,7 @@
           "age": 23,
           "exp": 0,
           "injury": null,
-          "rank": 120
+          "rank": 118
         },
         {
           "id": "11603",
@@ -1568,7 +1567,7 @@
           "age": 22,
           "exp": 0,
           "injury": null,
-          "rank": 105
+          "rank": 104
         },
         {
           "id": "7591",
@@ -1578,7 +1577,7 @@
           "age": 27,
           "exp": 5,
           "injury": null,
-          "rank": 426
+          "rank": 427
         },
         {
           "id": "12510",
@@ -1640,7 +1639,7 @@
           "K": 1,
           "DEF": 1
         },
-        "average_age": 25.4,
+        "average_age": 25.5,
         "age_25_and_under": 15
       }
     },
@@ -1698,7 +1697,7 @@
           "age": 25,
           "exp": 4,
           "injury": null,
-          "rank": 18
+          "rank": 19
         },
         {
           "id": "11560",
@@ -1708,7 +1707,7 @@
           "age": 24,
           "exp": 2,
           "injury": null,
-          "rank": 21
+          "rank": 20
         },
         {
           "id": "3294",
@@ -2030,7 +2029,7 @@
           "age": 31,
           "exp": 8,
           "injury": null,
-          "rank": 74
+          "rank": 75
         },
         {
           "id": "5022",
@@ -2085,16 +2084,6 @@
           "rank": 23
         },
         {
-          "id": "13281",
-          "name": "Jordyn Tyson",
-          "pos": "WR",
-          "team": "NO",
-          "age": 22,
-          "exp": 0,
-          "injury": "IR",
-          "rank": 62
-        },
-        {
           "id": "421",
           "name": "Matthew Stafford",
           "pos": "QB",
@@ -2102,7 +2091,7 @@
           "age": 38,
           "exp": 17,
           "injury": null,
-          "rank": 65
+          "rank": 67
         },
         {
           "id": "6819",
@@ -2177,6 +2166,16 @@
       ],
       "taxi": [],
       "reserve": [
+        {
+          "id": "13281",
+          "name": "Jordyn Tyson",
+          "pos": "WR",
+          "team": "NO",
+          "age": 22,
+          "exp": 0,
+          "injury": "IR",
+          "rank": 62
+        },
         {
           "id": "4137",
           "name": "James Conner",
@@ -2452,7 +2451,7 @@
           "age": 26,
           "exp": 2,
           "injury": null,
-          "rank": 456
+          "rank": 455
         }
       ],
       "taxi": [
@@ -2583,7 +2582,7 @@
           "age": 23,
           "exp": 1,
           "injury": null,
-          "rank": 40
+          "rank": 41
         },
         {
           "id": "7526",
@@ -2643,7 +2642,7 @@
           "age": 26,
           "exp": 4,
           "injury": null,
-          "rank": 118
+          "rank": 119
         },
         {
           "id": "PIT",
@@ -2864,7 +2863,7 @@
           "age": 28,
           "exp": 6,
           "injury": null,
-          "rank": 28
+          "rank": 27
         },
         {
           "id": "7588",
@@ -2874,7 +2873,7 @@
           "age": 26,
           "exp": 5,
           "injury": null,
-          "rank": 30
+          "rank": 31
         },
         {
           "id": "12514",
@@ -2924,7 +2923,7 @@
           "age": 25,
           "exp": 3,
           "injury": null,
-          "rank": 134
+          "rank": 133
         },
         {
           "id": "11792",
@@ -2999,16 +2998,6 @@
           "rank": 102
         },
         {
-          "id": "11655",
-          "name": "Tyrone Tracy",
-          "pos": "RB",
-          "team": "NYG",
-          "age": 26,
-          "exp": 2,
-          "injury": null,
-          "rank": 110
-        },
-        {
           "id": "5844",
           "name": "T.J. Hockenson",
           "pos": "TE",
@@ -3019,6 +3008,16 @@
           "rank": 128
         },
         {
+          "id": "11576",
+          "name": "Braelon Allen",
+          "pos": "RB",
+          "team": "NYJ",
+          "age": 22,
+          "exp": 2,
+          "injury": null,
+          "rank": 135
+        },
+        {
           "id": "10213",
           "name": "Tre Tucker",
           "pos": "WR",
@@ -3026,7 +3025,7 @@
           "age": 25,
           "exp": 3,
           "injury": null,
-          "rank": 179
+          "rank": 181
         },
         {
           "id": "1373",
@@ -3036,7 +3035,7 @@
           "age": 35,
           "exp": 13,
           "injury": null,
-          "rank": 215
+          "rank": 216
         },
         {
           "id": "4066",
@@ -3046,7 +3045,7 @@
           "age": 32,
           "exp": 9,
           "injury": null,
-          "rank": 465
+          "rank": 466
         }
       ],
       "taxi": [
@@ -3085,8 +3084,8 @@
       "player_ids": [
         "10213",
         "10222",
+        "11576",
         "11631",
-        "11655",
         "11792",
         "12506",
         "12514",
@@ -3118,8 +3117,8 @@
           "K": 1,
           "DEF": 1
         },
-        "average_age": 25.5,
-        "age_25_and_under": 13
+        "average_age": 25.3,
+        "age_25_and_under": 14
       }
     }
   ],
@@ -3208,7 +3207,7 @@
           "age": 31,
           "exp": 10,
           "injury": null,
-          "rank": 61
+          "rank": 62
         },
         {
           "id": "8167",
@@ -3381,7 +3380,7 @@
           "team": "PHI",
           "age": 23,
           "exp": 0,
-          "injury": "Questionable",
+          "injury": "IR",
           "rank": 140
         }
       ],
@@ -3460,7 +3459,7 @@
           "age": 26,
           "exp": 5,
           "injury": null,
-          "rank": 7
+          "rank": 6
         },
         {
           "id": "4881",
@@ -3530,7 +3529,7 @@
           "age": 29,
           "exp": 7,
           "injury": null,
-          "rank": 89
+          "rank": 88
         },
         {
           "id": "12961",
@@ -3592,7 +3591,7 @@
           "age": 23,
           "exp": 1,
           "injury": null,
-          "rank": 104
+          "rank": 103
         },
         {
           "id": "5870",
@@ -3602,7 +3601,7 @@
           "age": 29,
           "exp": 7,
           "injury": null,
-          "rank": 131
+          "rank": 130
         },
         {
           "id": "9504",
@@ -3622,7 +3621,7 @@
           "age": 33,
           "exp": 9,
           "injury": null,
-          "rank": 196
+          "rank": 195
         },
         {
           "id": "13319",
@@ -3632,7 +3631,7 @@
           "age": 23,
           "exp": 0,
           "injury": "Out",
-          "rank": 459
+          "rank": 457
         }
       ],
       "taxi": [
@@ -3844,7 +3843,7 @@
           "age": 23,
           "exp": 2,
           "injury": null,
-          "rank": 131
+          "rank": 132
         },
         {
           "id": "JAX",
@@ -3906,7 +3905,7 @@
           "age": 26,
           "exp": 4,
           "injury": null,
-          "rank": 107
+          "rank": 108
         },
         {
           "id": "9500",
@@ -3926,7 +3925,7 @@
           "age": 27,
           "exp": 4,
           "injury": null,
-          "rank": 120
+          "rank": 119
         },
         {
           "id": "7049",
@@ -3956,7 +3955,7 @@
           "age": 25,
           "exp": 3,
           "injury": null,
-          "rank": 204
+          "rank": 202
         }
       ],
       "taxi": [
@@ -4076,7 +4075,7 @@
           "age": 25,
           "exp": 2,
           "injury": null,
-          "rank": 20
+          "rank": 21
         },
         {
           "id": "10229",
@@ -4096,7 +4095,7 @@
           "age": 24,
           "exp": 2,
           "injury": null,
-          "rank": 35
+          "rank": 34
         },
         {
           "id": "12481",
@@ -4126,27 +4125,17 @@
           "age": 23,
           "exp": 0,
           "injury": "Out",
-          "rank": 112
+          "rank": 111
         },
         {
-          "id": "12502",
-          "name": "Gunnar Helm",
+          "id": "9482",
+          "name": "Michael Mayer",
           "pos": "TE",
-          "team": "TEN",
-          "age": 24,
-          "exp": 1,
+          "team": "LV",
+          "age": 25,
+          "exp": 3,
           "injury": null,
-          "rank": 153
-        },
-        {
-          "id": "13545",
-          "name": "Trey Smack",
-          "pos": "K",
-          "team": "GB",
-          "age": 23,
-          "exp": 0,
-          "injury": null,
-          "rank": 194
+          "rank": 475
         }
       ],
       "bench": [
@@ -4191,6 +4180,16 @@
           "rank": 119
         },
         {
+          "id": "12502",
+          "name": "Gunnar Helm",
+          "pos": "TE",
+          "team": "TEN",
+          "age": 24,
+          "exp": 1,
+          "injury": null,
+          "rank": 153
+        },
+        {
           "id": "13414",
           "name": "Kaelon Black",
           "pos": "RB",
@@ -4198,7 +4197,7 @@
           "age": 24,
           "exp": 0,
           "injury": null,
-          "rank": 162
+          "rank": 161
         },
         {
           "id": "11618",
@@ -4238,7 +4237,7 @@
           "age": 23,
           "exp": 0,
           "injury": null,
-          "rank": 179
+          "rank": 181
         },
         {
           "id": "13425",
@@ -4290,7 +4289,7 @@
           "age": 23,
           "exp": 0,
           "injury": null,
-          "rank": 290
+          "rank": 289
         }
       ],
       "reserve": [
@@ -4340,7 +4339,7 @@
         "13414",
         "13417",
         "13425",
-        "13545",
+        "9482",
         "9502"
       ],
       "profile": {
@@ -4349,10 +4348,9 @@
           "QB": 4,
           "RB": 7,
           "WR": 11,
-          "TE": 3,
-          "K": 1
+          "TE": 4
         },
-        "average_age": 23.3,
+        "average_age": 23.4,
         "age_25_and_under": 24
       }
     },
@@ -4420,7 +4418,7 @@
           "age": 22,
           "exp": 1,
           "injury": null,
-          "rank": 35
+          "rank": 37
         },
         {
           "id": "12526",
@@ -4440,7 +4438,7 @@
           "age": 26,
           "exp": 4,
           "injury": null,
-          "rank": 56
+          "rank": 55
         },
         {
           "id": "7611",
@@ -4470,7 +4468,7 @@
           "age": 24,
           "exp": 1,
           "injury": null,
-          "rank": 114
+          "rank": 113
         },
         {
           "id": "HOU",
@@ -4532,14 +4530,14 @@
           "age": 25,
           "exp": 2,
           "injury": null,
-          "rank": 97
+          "rank": 98
         },
         {
           "id": "7002",
           "name": "Juwan Johnson",
           "pos": "TE",
           "team": "NO",
-          "age": 29,
+          "age": 30,
           "exp": 6,
           "injury": null,
           "rank": 103
@@ -4552,7 +4550,7 @@
           "age": 32,
           "exp": 11,
           "injury": null,
-          "rank": 107
+          "rank": 106
         },
         {
           "id": "13305",
@@ -4562,7 +4560,7 @@
           "age": 23,
           "exp": 0,
           "injury": null,
-          "rank": 120
+          "rank": 118
         },
         {
           "id": "11603",
@@ -4594,7 +4592,7 @@
           "age": 22,
           "exp": 0,
           "injury": null,
-          "rank": 105
+          "rank": 104
         },
         {
           "id": "7591",
@@ -4604,7 +4602,7 @@
           "age": 27,
           "exp": 5,
           "injury": null,
-          "rank": 426
+          "rank": 427
         },
         {
           "id": "12510",
@@ -4666,7 +4664,7 @@
           "K": 1,
           "DEF": 1
         },
-        "average_age": 25.4,
+        "average_age": 25.5,
         "age_25_and_under": 15
       }
     },
@@ -4724,7 +4722,7 @@
           "age": 25,
           "exp": 4,
           "injury": null,
-          "rank": 18
+          "rank": 19
         },
         {
           "id": "11560",
@@ -4734,7 +4732,7 @@
           "age": 24,
           "exp": 2,
           "injury": null,
-          "rank": 21
+          "rank": 20
         },
         {
           "id": "3294",
@@ -5056,7 +5054,7 @@
           "age": 31,
           "exp": 8,
           "injury": null,
-          "rank": 74
+          "rank": 75
         },
         {
           "id": "5022",
@@ -5111,16 +5109,6 @@
           "rank": 23
         },
         {
-          "id": "13281",
-          "name": "Jordyn Tyson",
-          "pos": "WR",
-          "team": "NO",
-          "age": 22,
-          "exp": 0,
-          "injury": "IR",
-          "rank": 62
-        },
-        {
           "id": "421",
           "name": "Matthew Stafford",
           "pos": "QB",
@@ -5128,7 +5116,7 @@
           "age": 38,
           "exp": 17,
           "injury": null,
-          "rank": 65
+          "rank": 67
         },
         {
           "id": "6819",
@@ -5203,6 +5191,16 @@
       ],
       "taxi": [],
       "reserve": [
+        {
+          "id": "13281",
+          "name": "Jordyn Tyson",
+          "pos": "WR",
+          "team": "NO",
+          "age": 22,
+          "exp": 0,
+          "injury": "IR",
+          "rank": 62
+        },
         {
           "id": "4137",
           "name": "James Conner",
@@ -5478,7 +5476,7 @@
           "age": 26,
           "exp": 2,
           "injury": null,
-          "rank": 456
+          "rank": 455
         }
       ],
       "taxi": [
@@ -5609,7 +5607,7 @@
           "age": 23,
           "exp": 1,
           "injury": null,
-          "rank": 40
+          "rank": 41
         },
         {
           "id": "7526",
@@ -5669,7 +5667,7 @@
           "age": 26,
           "exp": 4,
           "injury": null,
-          "rank": 118
+          "rank": 119
         },
         {
           "id": "PIT",
@@ -5890,7 +5888,7 @@
           "age": 28,
           "exp": 6,
           "injury": null,
-          "rank": 28
+          "rank": 27
         },
         {
           "id": "7588",
@@ -5900,7 +5898,7 @@
           "age": 26,
           "exp": 5,
           "injury": null,
-          "rank": 30
+          "rank": 31
         },
         {
           "id": "12514",
@@ -5950,7 +5948,7 @@
           "age": 25,
           "exp": 3,
           "injury": null,
-          "rank": 134
+          "rank": 133
         },
         {
           "id": "11792",
@@ -6025,16 +6023,6 @@
           "rank": 102
         },
         {
-          "id": "11655",
-          "name": "Tyrone Tracy",
-          "pos": "RB",
-          "team": "NYG",
-          "age": 26,
-          "exp": 2,
-          "injury": null,
-          "rank": 110
-        },
-        {
           "id": "5844",
           "name": "T.J. Hockenson",
           "pos": "TE",
@@ -6045,6 +6033,16 @@
           "rank": 128
         },
         {
+          "id": "11576",
+          "name": "Braelon Allen",
+          "pos": "RB",
+          "team": "NYJ",
+          "age": 22,
+          "exp": 2,
+          "injury": null,
+          "rank": 135
+        },
+        {
           "id": "10213",
           "name": "Tre Tucker",
           "pos": "WR",
@@ -6052,7 +6050,7 @@
           "age": 25,
           "exp": 3,
           "injury": null,
-          "rank": 179
+          "rank": 181
         },
         {
           "id": "1373",
@@ -6062,7 +6060,7 @@
           "age": 35,
           "exp": 13,
           "injury": null,
-          "rank": 215
+          "rank": 216
         },
         {
           "id": "4066",
@@ -6072,7 +6070,7 @@
           "age": 32,
           "exp": 9,
           "injury": null,
-          "rank": 465
+          "rank": 466
         }
       ],
       "taxi": [
@@ -6111,8 +6109,8 @@
       "player_ids": [
         "10213",
         "10222",
+        "11576",
         "11631",
-        "11655",
         "11792",
         "12506",
         "12514",
@@ -6144,8 +6142,8 @@
           "K": 1,
           "DEF": 1
         },
-        "average_age": 25.5,
-        "age_25_and_under": 13
+        "average_age": 25.3,
+        "age_25_and_under": 14
       }
     }
   ],
@@ -6796,6 +6794,22 @@
   "transactions": [
     {
       "type": "free_agent",
+      "when": 1789304477596,
+      "roster_ids": [
+        10
+      ],
+      "summary": "Better Than Skre added Braelon Allen; dropped Tyrone Tracy"
+    },
+    {
+      "type": "free_agent",
+      "when": 1789256961942,
+      "roster_ids": [
+        4
+      ],
+      "summary": "Let Kyle Cooke added Michael Mayer; dropped Trey Smack"
+    },
+    {
+      "type": "free_agent",
       "when": 1789125713855,
       "roster_ids": [
         4
@@ -7018,23 +7032,6 @@
         10
       ],
       "summary": "Better Than Skre added Dohnte Meyers; dropped Troy Franklin"
-    },
-    {
-      "type": "free_agent",
-      "when": 1788100766691,
-      "roster_ids": [
-        10
-      ],
-      "summary": "Better Than Skre added Detroit Lions; dropped Chicago Bears"
-    },
-    {
-      "type": "trade",
-      "when": 1788100646274,
-      "roster_ids": [
-        4,
-        10
-      ],
-      "summary": "Let Kyle Cooke dropped TreVeyon Henderson; +2027 round 1 (Better Than Skre's), -2027 round 3 (The Cute Boys's) · Better Than Skre added TreVeyon Henderson; -2027 round 1 (Better Than Skre's), +2027 round 3 (The Cute Boys's)"
     }
   ],
   "prior_season": {
@@ -7197,6 +7194,16 @@
         "rank": 271
       },
       {
+        "id": "13310",
+        "name": "Miller Moss",
+        "pos": "QB",
+        "team": "CHI",
+        "age": 24,
+        "exp": 0,
+        "injury": null,
+        "rank": 279
+      },
+      {
         "id": "4017",
         "name": "Deshaun Watson",
         "pos": "QB",
@@ -7204,7 +7211,7 @@
         "age": 30,
         "exp": 9,
         "injury": null,
-        "rank": 302
+        "rank": 301
       },
       {
         "id": "6136",
@@ -7224,7 +7231,7 @@
         "age": 22,
         "exp": 0,
         "injury": null,
-        "rank": 359
+        "rank": 361
       },
       {
         "id": "13597",
@@ -7244,7 +7251,7 @@
         "age": 22,
         "exp": 0,
         "injury": null,
-        "rank": 397
+        "rank": 398
       },
       {
         "id": "7527",
@@ -7264,7 +7271,7 @@
         "age": 24,
         "exp": 3,
         "injury": null,
-        "rank": 477
+        "rank": 478
       },
       {
         "id": "7583",
@@ -7274,7 +7281,7 @@
         "age": 27,
         "exp": 5,
         "injury": null,
-        "rank": 479
+        "rank": 481
       },
       {
         "id": "19",
@@ -7384,7 +7391,7 @@
         "age": 28,
         "exp": 3,
         "injury": null,
-        "rank": 539
+        "rank": 540
       },
       {
         "id": "7585",
@@ -7421,7 +7428,7 @@
         "name": "Riley Leonard",
         "pos": "QB",
         "team": "IND",
-        "age": 23,
+        "age": 24,
         "exp": 1,
         "injury": null,
         "rank": 547
@@ -7454,7 +7461,7 @@
         "age": 28,
         "exp": 3,
         "injury": null,
-        "rank": 588
+        "rank": 589
       },
       {
         "id": "11648",
@@ -7504,7 +7511,7 @@
         "age": 27,
         "exp": 2,
         "injury": null,
-        "rank": 606
+        "rank": 607
       },
       {
         "id": "12494",
@@ -7755,28 +7762,18 @@
         "exp": 3,
         "injury": null,
         "rank": 677
-      },
-      {
-        "id": "4574",
-        "name": "Cooper Rush",
-        "pos": "QB",
-        "team": "ATL",
-        "age": 32,
-        "exp": 9,
-        "injury": null,
-        "rank": 682
       }
     ],
     "RB": [
       {
-        "id": "11576",
-        "name": "Braelon Allen",
+        "id": "11655",
+        "name": "Tyrone Tracy",
         "pos": "RB",
-        "team": "NYJ",
-        "age": 22,
+        "team": "NYG",
+        "age": 26,
         "exp": 2,
         "injury": null,
-        "rank": 135
+        "rank": 110
       },
       {
         "id": "11647",
@@ -7875,7 +7872,7 @@
         "team": "NO",
         "age": 23,
         "exp": 2,
-        "injury": "Out",
+        "injury": "IR",
         "rank": 190
       },
       {
@@ -7956,7 +7953,7 @@
         "age": 22,
         "exp": 0,
         "injury": "IR",
-        "rank": 405
+        "rank": 404
       },
       {
         "id": "14041",
@@ -7985,7 +7982,7 @@
         "team": "DAL",
         "age": 27,
         "exp": 4,
-        "injury": "Out",
+        "injury": "IR",
         "rank": 439
       },
       {
@@ -7996,7 +7993,7 @@
         "age": 26,
         "exp": 3,
         "injury": null,
-        "rank": 447
+        "rank": 446
       },
       {
         "id": "4147",
@@ -8006,7 +8003,7 @@
         "age": 30,
         "exp": 9,
         "injury": null,
-        "rank": 452
+        "rank": 453
       },
       {
         "id": "12928",
@@ -8036,7 +8033,7 @@
         "age": 23,
         "exp": 0,
         "injury": null,
-        "rank": 472
+        "rank": 473
       },
       {
         "id": "12495",
@@ -8116,7 +8113,7 @@
         "age": 23,
         "exp": 0,
         "injury": "IR",
-        "rank": 509
+        "rank": 510
       },
       {
         "id": "6659",
@@ -8289,16 +8286,6 @@
         "rank": 607
       },
       {
-        "id": "7599",
-        "name": "Jermar Jefferson",
-        "pos": "RB",
-        "team": "MIN",
-        "age": 26,
-        "exp": 5,
-        "injury": "Questionable",
-        "rank": 608
-      },
-      {
         "id": "12897",
         "name": "Nate Carter",
         "pos": "RB",
@@ -8309,16 +8296,6 @@
         "rank": 609
       },
       {
-        "id": "8423",
-        "name": "Brittain Brown",
-        "pos": "RB",
-        "team": "CHI",
-        "age": 28,
-        "exp": 4,
-        "injury": "IR",
-        "rank": 611
-      },
-      {
         "id": "8181",
         "name": "Connor Heyward",
         "pos": "RB",
@@ -8327,6 +8304,16 @@
         "exp": 4,
         "injury": null,
         "rank": 612
+      },
+      {
+        "id": "8423",
+        "name": "Brittain Brown",
+        "pos": "RB",
+        "team": "CHI",
+        "age": 28,
+        "exp": 4,
+        "injury": "IR",
+        "rank": 613
       },
       {
         "id": "6323",
@@ -8479,16 +8466,6 @@
         "rank": 649
       },
       {
-        "id": "11963",
-        "name": "Chris Collier",
-        "pos": "RB",
-        "team": "LV",
-        "age": 26,
-        "exp": 2,
-        "injury": "IR",
-        "rank": 650
-      },
-      {
         "id": "11573",
         "name": "Frank Gore",
         "pos": "RB",
@@ -8497,6 +8474,16 @@
         "exp": 2,
         "injury": null,
         "rank": 650
+      },
+      {
+        "id": "11963",
+        "name": "Chris Collier",
+        "pos": "RB",
+        "team": "LV",
+        "age": 26,
+        "exp": 2,
+        "injury": "IR",
+        "rank": 651
       },
       {
         "id": "8254",
@@ -8573,7 +8560,7 @@
         "name": "Jaleel McLaughlin",
         "pos": "RB",
         "team": "CLE",
-        "age": 25,
+        "age": 26,
         "exp": 3,
         "injury": null,
         "rank": 661
@@ -8766,6 +8753,16 @@
         "age": 24,
         "exp": 1,
         "injury": null,
+        "rank": 690
+      },
+      {
+        "id": "12531",
+        "name": "Trevor Etienne",
+        "pos": "RB",
+        "team": "CAR",
+        "age": 22,
+        "exp": 1,
+        "injury": "IR",
         "rank": 690
       }
     ],
@@ -8971,16 +8968,6 @@
         "rank": 210
       },
       {
-        "id": "13412",
-        "name": "Kendrick Law",
-        "pos": "WR",
-        "team": "DET",
-        "age": 23,
-        "exp": 0,
-        "injury": "IR",
-        "rank": 241
-      },
-      {
         "id": "11617",
         "name": "Malachi Corley",
         "pos": "WR",
@@ -8989,6 +8976,16 @@
         "exp": 2,
         "injury": null,
         "rank": 242
+      },
+      {
+        "id": "13412",
+        "name": "Kendrick Law",
+        "pos": "WR",
+        "team": "DET",
+        "age": 23,
+        "exp": 0,
+        "injury": "IR",
+        "rank": 243
       },
       {
         "id": "11474",
@@ -9001,16 +8998,6 @@
         "rank": 251
       },
       {
-        "id": "12475",
-        "name": "Ricky White",
-        "pos": "WR",
-        "team": "SEA",
-        "age": 24,
-        "exp": 1,
-        "injury": null,
-        "rank": 305
-      },
-      {
         "id": "7559",
         "name": "Ihmir Smith-Marsette",
         "pos": "WR",
@@ -9018,7 +9005,17 @@
         "age": 27,
         "exp": 5,
         "injury": null,
-        "rank": 310
+        "rank": 311
+      },
+      {
+        "id": "12475",
+        "name": "Ricky White",
+        "pos": "WR",
+        "team": "SEA",
+        "age": 24,
+        "exp": 1,
+        "injury": null,
+        "rank": 318
       },
       {
         "id": "6045",
@@ -9051,22 +9048,22 @@
         "rank": 362
       },
       {
-        "id": "8756",
-        "name": "Brandon Johnson",
-        "pos": "WR",
-        "team": "PIT",
-        "age": 28,
-        "exp": 4,
-        "injury": null,
-        "rank": 364
-      },
-      {
         "id": "13411",
         "name": "Zavion Thomas",
         "pos": "WR",
         "team": "CHI",
         "age": 22,
         "exp": 0,
+        "injury": null,
+        "rank": 363
+      },
+      {
+        "id": "8756",
+        "name": "Brandon Johnson",
+        "pos": "WR",
+        "team": "PIT",
+        "age": 28,
+        "exp": 4,
         "injury": null,
         "rank": 364
       },
@@ -9079,16 +9076,6 @@
         "exp": 0,
         "injury": null,
         "rank": 377
-      },
-      {
-        "id": "11633",
-        "name": "Jamari Thrash",
-        "pos": "WR",
-        "team": "CLE",
-        "age": 25,
-        "exp": 2,
-        "injury": "Questionable",
-        "rank": 382
       },
       {
         "id": "13402",
@@ -9158,7 +9145,7 @@
         "age": 22,
         "exp": 0,
         "injury": null,
-        "rank": 434
+        "rank": 433
       },
       {
         "id": "6798",
@@ -9188,7 +9175,7 @@
         "age": 30,
         "exp": 4,
         "injury": null,
-        "rank": 447
+        "rank": 448
       },
       {
         "id": "7595",
@@ -9198,7 +9185,7 @@
         "age": 27,
         "exp": 5,
         "injury": null,
-        "rank": 450
+        "rank": 451
       },
       {
         "id": "13890",
@@ -9218,7 +9205,7 @@
         "age": 22,
         "exp": 0,
         "injury": null,
-        "rank": 455
+        "rank": 456
       },
       {
         "id": "13124",
@@ -9248,7 +9235,7 @@
         "age": 26,
         "exp": 3,
         "injury": null,
-        "rank": 490
+        "rank": 489
       },
       {
         "id": "11895",
@@ -9431,16 +9418,6 @@
         "rank": 549
       },
       {
-        "id": "13042",
-        "name": "Xavier Guillory",
-        "pos": "WR",
-        "team": "BAL",
-        "age": 25,
-        "exp": 1,
-        "injury": null,
-        "rank": 549
-      },
-      {
         "id": "13270",
         "name": "CJ Daniels",
         "pos": "WR",
@@ -9461,12 +9438,12 @@
         "rank": 550
       },
       {
-        "id": "13318",
-        "name": "Noah Thomas",
+        "id": "13042",
+        "name": "Xavier Guillory",
         "pos": "WR",
-        "team": "CIN",
-        "age": 22,
-        "exp": 0,
+        "team": "BAL",
+        "age": 25,
+        "exp": 1,
         "injury": null,
         "rank": 551
       },
@@ -9481,6 +9458,16 @@
         "rank": 551
       },
       {
+        "id": "13318",
+        "name": "Noah Thomas",
+        "pos": "WR",
+        "team": "CIN",
+        "age": 22,
+        "exp": 0,
+        "injury": null,
+        "rank": 552
+      },
+      {
         "id": "11421",
         "name": "Ryan Miller",
         "pos": "WR",
@@ -9488,7 +9475,7 @@
         "age": 26,
         "exp": 3,
         "injury": null,
-        "rank": 552
+        "rank": 553
       },
       {
         "id": "12151",
@@ -9557,18 +9544,8 @@
         "team": "NYJ",
         "age": 32,
         "exp": 9,
-        "injury": "Out",
+        "injury": "IR",
         "rank": 573
-      },
-      {
-        "id": "12460",
-        "name": "Antwane Wells",
-        "pos": "WR",
-        "team": "ATL",
-        "age": 25,
-        "exp": 1,
-        "injury": null,
-        "rank": 574
       },
       {
         "id": "13392",
@@ -9579,6 +9556,16 @@
         "exp": 0,
         "injury": "IR",
         "rank": 575
+      },
+      {
+        "id": "12460",
+        "name": "Antwane Wells",
+        "pos": "WR",
+        "team": "ATL",
+        "age": 25,
+        "exp": 1,
+        "injury": null,
+        "rank": 576
       },
       {
         "id": "4274",
@@ -9668,7 +9655,7 @@
         "age": 25,
         "exp": 1,
         "injury": null,
-        "rank": 590
+        "rank": 593
       },
       {
         "id": "8414",
@@ -9767,6 +9754,16 @@
         "team": "LAC",
         "age": 26,
         "exp": 3,
+        "injury": null,
+        "rank": 615
+      },
+      {
+        "id": "13670",
+        "name": "Harrison Wallace",
+        "pos": "WR",
+        "team": "ARI",
+        "age": 23,
+        "exp": 0,
         "injury": null,
         "rank": 615
       }
@@ -9890,7 +9887,7 @@
         "age": 24,
         "exp": 0,
         "injury": "IR",
-        "rank": 243
+        "rank": 238
       },
       {
         "id": "8219",
@@ -9910,7 +9907,7 @@
         "age": 26,
         "exp": 2,
         "injury": null,
-        "rank": 252
+        "rank": 251
       },
       {
         "id": "13151",
@@ -9930,7 +9927,7 @@
         "age": 24,
         "exp": 1,
         "injury": null,
-        "rank": 258
+        "rank": 259
       },
       {
         "id": "3258",
@@ -9940,7 +9937,7 @@
         "age": 33,
         "exp": 10,
         "injury": null,
-        "rank": 281
+        "rank": 280
       },
       {
         "id": "12901",
@@ -9977,7 +9974,7 @@
         "name": "Darren Waller",
         "pos": "TE",
         "team": "CAR",
-        "age": 33,
+        "age": 34,
         "exp": 11,
         "injury": null,
         "rank": 355
@@ -9990,7 +9987,7 @@
         "age": 22,
         "exp": 0,
         "injury": null,
-        "rank": 365
+        "rank": 366
       },
       {
         "id": "7536",
@@ -10010,7 +10007,7 @@
         "age": 24,
         "exp": 1,
         "injury": "IR",
-        "rank": 392
+        "rank": 393
       },
       {
         "id": "8107",
@@ -10020,7 +10017,7 @@
         "age": 29,
         "exp": 4,
         "injury": "IR",
-        "rank": 395
+        "rank": 397
       },
       {
         "id": "12765",
@@ -10060,7 +10057,7 @@
         "age": 25,
         "exp": 1,
         "injury": "IR",
-        "rank": 416
+        "rank": 417
       },
       {
         "id": "3202",
@@ -10083,16 +10080,6 @@
         "rank": 435
       },
       {
-        "id": "12079",
-        "name": "Treyton Welch",
-        "pos": "TE",
-        "team": "NO",
-        "age": 25,
-        "exp": 2,
-        "injury": null,
-        "rank": 443
-      },
-      {
         "id": "11508",
         "name": "Princeton Fant",
         "pos": "TE",
@@ -10100,7 +10087,17 @@
         "age": 27,
         "exp": 3,
         "injury": "IR",
-        "rank": 444
+        "rank": 445
+      },
+      {
+        "id": "12079",
+        "name": "Treyton Welch",
+        "pos": "TE",
+        "team": "NO",
+        "age": 25,
+        "exp": 2,
+        "injury": null,
+        "rank": 445
       },
       {
         "id": "4993",
@@ -10163,12 +10160,12 @@
         "rank": 472
       },
       {
-        "id": "9482",
-        "name": "Michael Mayer",
+        "id": "13400",
+        "name": "Justin Joly",
         "pos": "TE",
-        "team": "LV",
-        "age": 25,
-        "exp": 3,
+        "team": "MIA",
+        "age": 22,
+        "exp": 0,
         "injury": null,
         "rank": 478
       },
@@ -10180,17 +10177,7 @@
         "age": 25,
         "exp": 3,
         "injury": null,
-        "rank": 479
-      },
-      {
-        "id": "13400",
-        "name": "Justin Joly",
-        "pos": "TE",
-        "team": "MIA",
-        "age": 22,
-        "exp": 0,
-        "injury": null,
-        "rank": 479
+        "rank": 481
       },
       {
         "id": "6826",
@@ -10340,7 +10327,7 @@
         "age": 26,
         "exp": 3,
         "injury": null,
-        "rank": 535
+        "rank": 536
       },
       {
         "id": "13846",
@@ -10371,6 +10358,16 @@
         "exp": 2,
         "injury": null,
         "rank": 562
+      },
+      {
+        "id": "10227",
+        "name": "Payne Durham",
+        "pos": "TE",
+        "team": "TB",
+        "age": 26,
+        "exp": 3,
+        "injury": null,
+        "rank": 564
       }
     ],
     "K": [
@@ -10382,7 +10379,7 @@
         "age": 35,
         "exp": 12,
         "injury": null,
-        "rank": 148
+        "rank": 149
       },
       {
         "id": "12711",
@@ -10402,7 +10399,7 @@
         "age": 27,
         "exp": 5,
         "injury": null,
-        "rank": 154
+        "rank": 153
       },
       {
         "id": "12015",
@@ -10439,10 +10436,10 @@
         "name": "Eddy Pineiro",
         "pos": "K",
         "team": "SF",
-        "age": 30,
+        "age": 31,
         "exp": 8,
         "injury": null,
-        "rank": 174
+        "rank": 175
       },
       {
         "id": "3678",
@@ -10453,6 +10450,16 @@
         "exp": 10,
         "injury": null,
         "rank": 177
+      },
+      {
+        "id": "13545",
+        "name": "Trey Smack",
+        "pos": "K",
+        "team": "GB",
+        "age": 23,
+        "exp": 0,
+        "injury": null,
+        "rank": 195
       },
       {
         "id": "6650",
@@ -10472,7 +10479,7 @@
         "age": 31,
         "exp": 9,
         "injury": null,
-        "rank": 216
+        "rank": 215
       },
       {
         "id": "6083",
@@ -10613,16 +10620,6 @@
         "exp": 0,
         "injury": null,
         "rank": 630
-      },
-      {
-        "id": "5095",
-        "name": "Daniel Carlson",
-        "pos": "K",
-        "team": "NO",
-        "age": 31,
-        "exp": 8,
-        "injury": null,
-        "rank": 663
       }
     ],
     "DEF": [
@@ -10841,18 +10838,6 @@
   "trending": {
     "adds": [
       {
-        "id": "13414",
-        "name": "Kaelon Black",
-        "pos": "RB",
-        "team": "SF",
-        "age": 24,
-        "exp": 0,
-        "injury": null,
-        "rank": 162,
-        "count": 173110,
-        "rostered_in_league": true
-      },
-      {
         "id": "9482",
         "name": "Michael Mayer",
         "pos": "TE",
@@ -10860,33 +10845,21 @@
         "age": 25,
         "exp": 3,
         "injury": null,
-        "rank": 478,
-        "count": 144675,
-        "rostered_in_league": false
+        "rank": 475,
+        "count": 343431,
+        "rostered_in_league": true
       },
       {
-        "id": "4574",
-        "name": "Cooper Rush",
-        "pos": "QB",
-        "team": "ATL",
-        "age": 32,
-        "exp": 9,
-        "injury": null,
-        "rank": 682,
-        "count": 73306,
-        "rostered_in_league": false
-      },
-      {
-        "id": "3286",
-        "name": "Demarcus Robinson",
-        "pos": "WR",
+        "id": "13414",
+        "name": "Kaelon Black",
+        "pos": "RB",
         "team": "SF",
-        "age": 31,
-        "exp": 10,
+        "age": 24,
+        "exp": 0,
         "injury": null,
-        "rank": 679,
-        "count": 66966,
-        "rostered_in_league": false
+        "rank": 161,
+        "count": 73500,
+        "rostered_in_league": true
       },
       {
         "id": "13311",
@@ -10897,8 +10870,20 @@
         "exp": 0,
         "injury": null,
         "rank": 197,
-        "count": 64344,
+        "count": 58317,
         "rostered_in_league": true
+      },
+      {
+        "id": "3286",
+        "name": "Demarcus Robinson",
+        "pos": "WR",
+        "team": "SF",
+        "age": 31,
+        "exp": 10,
+        "injury": null,
+        "rank": 679,
+        "count": 45432,
+        "rostered_in_league": false
       },
       {
         "id": "10213",
@@ -10908,33 +10893,9 @@
         "age": 25,
         "exp": 3,
         "injury": null,
-        "rank": 179,
-        "count": 42756,
+        "rank": 181,
+        "count": 40092,
         "rostered_in_league": true
-      },
-      {
-        "id": "11834",
-        "name": "Devaughn Vele",
-        "pos": "WR",
-        "team": "NO",
-        "age": 28,
-        "exp": 2,
-        "injury": null,
-        "rank": 209,
-        "count": 27048,
-        "rostered_in_league": false
-      },
-      {
-        "id": "2505",
-        "name": "Darren Waller",
-        "pos": "TE",
-        "team": "CAR",
-        "age": 33,
-        "exp": 11,
-        "injury": null,
-        "rank": 355,
-        "count": 24984,
-        "rostered_in_league": false
       },
       {
         "id": "13285",
@@ -10945,31 +10906,7 @@
         "exp": 0,
         "injury": null,
         "rank": 199,
-        "count": 21500,
-        "rostered_in_league": true
-      },
-      {
-        "id": "8180",
-        "name": "Jalen Nailor",
-        "pos": "WR",
-        "team": "LV",
-        "age": 27,
-        "exp": 4,
-        "injury": null,
-        "rank": 169,
-        "count": 19386,
-        "rostered_in_league": false
-      },
-      {
-        "id": "4035",
-        "name": "Alvin Kamara",
-        "pos": "RB",
-        "team": "NO",
-        "age": 31,
-        "exp": 9,
-        "injury": "Questionable",
-        "rank": 119,
-        "count": 19080,
+        "count": 36590,
         "rostered_in_league": true
       },
       {
@@ -10981,31 +10918,43 @@
         "exp": 0,
         "injury": null,
         "rank": 688,
-        "count": 17200,
+        "count": 31140,
         "rostered_in_league": true
       },
       {
-        "id": "9511",
-        "name": "Keaton Mitchell",
-        "pos": "RB",
-        "team": "LAC",
-        "age": 24,
-        "exp": 3,
-        "injury": null,
-        "rank": 148,
-        "count": 16911,
-        "rostered_in_league": true
-      },
-      {
-        "id": "4177",
-        "name": "Mack Hollins",
+        "id": "11834",
+        "name": "Devaughn Vele",
         "pos": "WR",
-        "team": "NE",
+        "team": "NO",
+        "age": 28,
+        "exp": 2,
+        "injury": null,
+        "rank": 209,
+        "count": 29414,
+        "rostered_in_league": false
+      },
+      {
+        "id": "4574",
+        "name": "Cooper Rush",
+        "pos": "QB",
+        "team": "ATL",
         "age": 32,
         "exp": 9,
         "injury": null,
-        "rank": 697,
-        "count": 16305,
+        "rank": 682,
+        "count": 28510,
+        "rostered_in_league": false
+      },
+      {
+        "id": "2505",
+        "name": "Darren Waller",
+        "pos": "TE",
+        "team": "CAR",
+        "age": 34,
+        "exp": 11,
+        "injury": null,
+        "rank": 355,
+        "count": 25857,
         "rostered_in_league": false
       },
       {
@@ -11017,7 +10966,19 @@
         "exp": 6,
         "injury": null,
         "rank": 194,
-        "count": 15156,
+        "count": 25533,
+        "rostered_in_league": true
+      },
+      {
+        "id": "9511",
+        "name": "Keaton Mitchell",
+        "pos": "RB",
+        "team": "LAC",
+        "age": 24,
+        "exp": 3,
+        "injury": null,
+        "rank": 148,
+        "count": 24264,
         "rostered_in_league": true
       },
       {
@@ -11029,225 +10990,7 @@
         "exp": null,
         "injury": null,
         "rank": 1000000000,
-        "count": 15084,
-        "rostered_in_league": true
-      },
-      {
-        "id": "5995",
-        "name": "Justice Hill",
-        "pos": "RB",
-        "team": "BAL",
-        "age": 28,
-        "exp": 7,
-        "injury": null,
-        "rank": 218,
-        "count": 14670,
-        "rostered_in_league": false
-      },
-      {
-        "id": "8800",
-        "name": "Malik Davis",
-        "pos": "RB",
-        "team": "DAL",
-        "age": 27,
-        "exp": 4,
-        "injury": "Out",
-        "rank": 439,
-        "count": 13464,
-        "rostered_in_league": false
-      },
-      {
-        "id": "5849",
-        "name": "Kyler Murray",
-        "pos": "QB",
-        "team": "MIN",
-        "age": 29,
-        "exp": 7,
-        "injury": null,
-        "rank": 89,
-        "count": 13456,
-        "rostered_in_league": true
-      },
-      {
-        "id": "1166",
-        "name": "Kirk Cousins",
-        "pos": "QB",
-        "team": "LV",
-        "age": 38,
-        "exp": 14,
-        "injury": null,
-        "rank": 271,
-        "count": 13352,
-        "rostered_in_league": false
-      },
-      {
-        "id": "5854",
-        "name": "Drew Lock",
-        "pos": "QB",
-        "team": "SEA",
-        "age": 29,
-        "exp": 7,
-        "injury": null,
-        "rank": 691,
-        "count": 12297,
-        "rostered_in_league": false
-      },
-      {
-        "id": "2078",
-        "name": "Odell Beckham",
-        "pos": "WR",
-        "team": "NYG",
-        "age": 33,
-        "exp": 12,
-        "injury": null,
-        "rank": 443,
-        "count": 12131,
-        "rostered_in_league": false
-      },
-      {
-        "id": "4147",
-        "name": "Samaje Perine",
-        "pos": "RB",
-        "team": "CIN",
-        "age": 30,
-        "exp": 9,
-        "injury": null,
-        "rank": 452,
-        "count": 12000,
-        "rostered_in_league": false
-      },
-      {
-        "id": "9502",
-        "name": "Tank Dell",
-        "pos": "WR",
-        "team": "HOU",
-        "age": 26,
-        "exp": 3,
-        "injury": "IR",
-        "rank": 187,
-        "count": 11592,
-        "rostered_in_league": true
-      },
-      {
-        "id": "13296",
-        "name": "Caleb Douglas",
-        "pos": "WR",
-        "team": "MIA",
-        "age": 23,
-        "exp": 0,
-        "injury": null,
-        "rank": 197,
-        "count": 10624,
-        "rostered_in_league": true
-      }
-    ],
-    "drops": [
-      {
-        "id": "8800",
-        "name": "Malik Davis",
-        "pos": "RB",
-        "team": "DAL",
-        "age": 27,
-        "exp": 4,
-        "injury": "Out",
-        "rank": 439,
-        "count": 197640,
-        "rostered_in_league": false
-      },
-      {
-        "id": "10235",
-        "name": "Roschon Johnson",
-        "pos": "RB",
-        "team": "CHI",
-        "age": 25,
-        "exp": 3,
-        "injury": null,
-        "rank": 681,
-        "count": 44448,
-        "rostered_in_league": false
-      },
-      {
-        "id": "12487",
-        "name": "Terrance Ferguson",
-        "pos": "TE",
-        "team": "LAR",
-        "age": 23,
-        "exp": 1,
-        "injury": null,
-        "rank": 141,
-        "count": 30616,
-        "rostered_in_league": false
-      },
-      {
-        "id": "9482",
-        "name": "Michael Mayer",
-        "pos": "TE",
-        "team": "LV",
-        "age": 25,
-        "exp": 3,
-        "injury": null,
-        "rank": 478,
-        "count": 21051,
-        "rostered_in_league": false
-      },
-      {
-        "id": "8121",
-        "name": "Romeo Doubs",
-        "pos": "WR",
-        "team": "NE",
-        "age": 26,
-        "exp": 4,
-        "injury": null,
-        "rank": 117,
-        "count": 17136,
-        "rostered_in_league": true
-      },
-      {
-        "id": "9480",
-        "name": "Brenton Strange",
-        "pos": "TE",
-        "team": "JAX",
-        "age": 25,
-        "exp": 3,
-        "injury": null,
-        "rank": 104,
-        "count": 13176,
-        "rostered_in_league": true
-      },
-      {
-        "id": "10219",
-        "name": "Chris Rodriguez",
-        "pos": "RB",
-        "team": "JAX",
-        "age": 26,
-        "exp": 3,
-        "injury": null,
-        "rank": 125,
-        "count": 12393,
-        "rostered_in_league": true
-      },
-      {
-        "id": "11610",
-        "name": "Malik Washington",
-        "pos": "WR",
-        "team": "MIA",
-        "age": 25,
-        "exp": 2,
-        "injury": null,
-        "rank": 177,
-        "count": 12336,
-        "rostered_in_league": false
-      },
-      {
-        "id": "9511",
-        "name": "Keaton Mitchell",
-        "pos": "RB",
-        "team": "LAC",
-        "age": 24,
-        "exp": 3,
-        "injury": null,
-        "rank": 148,
-        "count": 11817,
+        "count": 24102,
         "rostered_in_league": true
       },
       {
@@ -11259,151 +11002,127 @@
         "exp": 9,
         "injury": "Questionable",
         "rank": 119,
-        "count": 11808,
+        "count": 23080,
         "rostered_in_league": true
       },
       {
-        "id": "8698",
-        "name": "Jake Tonges",
-        "pos": "TE",
-        "team": "SF",
+        "id": "2078",
+        "name": "Odell Beckham",
+        "pos": "WR",
+        "team": "NYG",
+        "age": 33,
+        "exp": 12,
+        "injury": null,
+        "rank": 443,
+        "count": 20902,
+        "rostered_in_league": false
+      },
+      {
+        "id": "5995",
+        "name": "Justice Hill",
+        "pos": "RB",
+        "team": "BAL",
+        "age": 28,
+        "exp": 7,
+        "injury": null,
+        "rank": 218,
+        "count": 20466,
+        "rostered_in_league": false
+      },
+      {
+        "id": "13424",
+        "name": "Seth McGowan",
+        "pos": "RB",
+        "team": "IND",
+        "age": 24,
+        "exp": 0,
+        "injury": null,
+        "rank": 375,
+        "count": 18232,
+        "rostered_in_league": true
+      },
+      {
+        "id": "8180",
+        "name": "Jalen Nailor",
+        "pos": "WR",
+        "team": "LV",
         "age": 27,
         "exp": 4,
-        "injury": "Questionable",
-        "rank": 178,
-        "count": 11475,
-        "rostered_in_league": false
-      },
-      {
-        "id": "6149",
-        "name": "Unknown player 6149",
-        "pos": null,
-        "team": null,
-        "age": null,
-        "exp": null,
         "injury": null,
-        "rank": 1000000000,
-        "count": 11412,
+        "rank": 169,
+        "count": 16353,
         "rostered_in_league": false
       },
       {
-        "id": "421",
-        "name": "Matthew Stafford",
+        "id": "6083",
+        "name": "Matt Gay",
+        "pos": "K",
+        "team": "LV",
+        "age": 32,
+        "exp": 7,
+        "injury": null,
+        "rank": 239,
+        "count": 15800,
+        "rostered_in_league": false
+      },
+      {
+        "id": "4147",
+        "name": "Samaje Perine",
+        "pos": "RB",
+        "team": "CIN",
+        "age": 30,
+        "exp": 9,
+        "injury": null,
+        "rank": 453,
+        "count": 14688,
+        "rostered_in_league": false
+      },
+      {
+        "id": "7567",
+        "name": "Kenny Gainwell",
+        "pos": "RB",
+        "team": "TB",
+        "age": 27,
+        "exp": 5,
+        "injury": null,
+        "rank": 86,
+        "count": 12408,
+        "rostered_in_league": true
+      },
+      {
+        "id": "5849",
+        "name": "Kyler Murray",
         "pos": "QB",
-        "team": "LAR",
-        "age": 38,
-        "exp": 17,
+        "team": "MIN",
+        "age": 29,
+        "exp": 7,
         "injury": null,
-        "rank": 65,
-        "count": 10980,
+        "rank": 88,
+        "count": 11944,
         "rostered_in_league": true
       },
       {
-        "id": "13413",
-        "name": "Cyrus Allen",
-        "pos": "WR",
-        "team": "KC",
-        "age": 23,
-        "exp": 0,
-        "injury": null,
-        "rank": 179,
-        "count": 10908,
-        "rostered_in_league": true
-      },
-      {
-        "id": "12457",
-        "name": "Jaydon Blue",
-        "pos": "RB",
-        "team": "PHI",
-        "age": 22,
-        "exp": 1,
-        "injury": null,
-        "rank": 189,
-        "count": 10712,
-        "rostered_in_league": true
-      },
-      {
-        "id": "13330",
-        "name": "Kenyon Sadiq",
-        "pos": "TE",
-        "team": "NYJ",
-        "age": 21,
-        "exp": 0,
-        "injury": null,
-        "rank": 109,
-        "count": 10341,
-        "rostered_in_league": true
-      },
-      {
-        "id": "8205",
-        "name": "Isiah Pacheco",
-        "pos": "RB",
-        "team": "DET",
-        "age": 27,
-        "exp": 4,
-        "injury": "IR",
-        "rank": 151,
-        "count": 10248,
-        "rostered_in_league": true
-      },
-      {
-        "id": "3321",
-        "name": "Unknown player 3321",
-        "pos": null,
-        "team": null,
+        "id": "JAX",
+        "name": "Jacksonville Jaguars",
+        "pos": "DEF",
+        "team": "JAX",
         "age": null,
         "exp": null,
         "injury": null,
         "rank": 1000000000,
-        "count": 10056,
-        "rostered_in_league": false
-      },
-      {
-        "id": "13417",
-        "name": "De'Zhaun Stribling",
-        "pos": "WR",
-        "team": "SF",
-        "age": 23,
-        "exp": 0,
-        "injury": "Out",
-        "rank": 112,
-        "count": 10002,
+        "count": 11598,
         "rostered_in_league": true
       },
       {
-        "id": "12493",
-        "name": "Oronde Gadsden",
+        "id": "8111",
+        "name": "Cade Otton",
         "pos": "TE",
-        "team": "LAC",
-        "age": 23,
-        "exp": 1,
-        "injury": null,
-        "rank": 83,
-        "count": 9965,
-        "rostered_in_league": true
-      },
-      {
-        "id": "11435",
-        "name": "Emanuel Wilson",
-        "pos": "RB",
-        "team": "SEA",
+        "team": "TB",
         "age": 27,
-        "exp": 3,
+        "exp": 4,
         "injury": null,
-        "rank": 161,
-        "count": 9954,
-        "rostered_in_league": true
-      },
-      {
-        "id": "6783",
-        "name": "Jerry Jeudy",
-        "pos": "WR",
-        "team": "CLE",
-        "age": 27,
-        "exp": 6,
-        "injury": null,
-        "rank": 160,
-        "count": 9882,
+        "rank": 148,
+        "count": 11496,
         "rostered_in_league": false
       },
       {
@@ -11415,7 +11134,177 @@
         "exp": 0,
         "injury": null,
         "rank": 197,
-        "count": 9800,
+        "count": 11480,
+        "rostered_in_league": true
+      }
+    ],
+    "drops": [
+      {
+        "id": "8800",
+        "name": "Malik Davis",
+        "pos": "RB",
+        "team": "DAL",
+        "age": 27,
+        "exp": 4,
+        "injury": "IR",
+        "rank": 439,
+        "count": 224514,
+        "rostered_in_league": false
+      },
+      {
+        "id": "10235",
+        "name": "Roschon Johnson",
+        "pos": "RB",
+        "team": "CHI",
+        "age": 25,
+        "exp": 3,
+        "injury": null,
+        "rank": 681,
+        "count": 39992,
+        "rostered_in_league": false
+      },
+      {
+        "id": "9480",
+        "name": "Brenton Strange",
+        "pos": "TE",
+        "team": "JAX",
+        "age": 25,
+        "exp": 3,
+        "injury": null,
+        "rank": 104,
+        "count": 20214,
+        "rostered_in_league": true
+      },
+      {
+        "id": "12487",
+        "name": "Terrance Ferguson",
+        "pos": "TE",
+        "team": "LAR",
+        "age": 23,
+        "exp": 1,
+        "injury": null,
+        "rank": 141,
+        "count": 20064,
+        "rostered_in_league": false
+      },
+      {
+        "id": "9482",
+        "name": "Michael Mayer",
+        "pos": "TE",
+        "team": "LV",
+        "age": 25,
+        "exp": 3,
+        "injury": null,
+        "rank": 475,
+        "count": 17262,
+        "rostered_in_league": true
+      },
+      {
+        "id": "4035",
+        "name": "Alvin Kamara",
+        "pos": "RB",
+        "team": "NO",
+        "age": 31,
+        "exp": 9,
+        "injury": "Questionable",
+        "rank": 119,
+        "count": 14104,
+        "rostered_in_league": true
+      },
+      {
+        "id": "13330",
+        "name": "Kenyon Sadiq",
+        "pos": "TE",
+        "team": "NYJ",
+        "age": 21,
+        "exp": 0,
+        "injury": null,
+        "rank": 109,
+        "count": 13446,
+        "rostered_in_league": true
+      },
+      {
+        "id": "12493",
+        "name": "Oronde Gadsden",
+        "pos": "TE",
+        "team": "LAC",
+        "age": 23,
+        "exp": 1,
+        "injury": null,
+        "rank": 83,
+        "count": 12985,
+        "rostered_in_league": true
+      },
+      {
+        "id": "8121",
+        "name": "Romeo Doubs",
+        "pos": "WR",
+        "team": "NE",
+        "age": 26,
+        "exp": 4,
+        "injury": null,
+        "rank": 117,
+        "count": 12856,
+        "rostered_in_league": true
+      },
+      {
+        "id": "DET",
+        "name": "Detroit Lions",
+        "pos": "DEF",
+        "team": "DET",
+        "age": null,
+        "exp": null,
+        "injury": null,
+        "rank": 1000000000,
+        "count": 12852,
+        "rostered_in_league": true
+      },
+      {
+        "id": "11610",
+        "name": "Malik Washington",
+        "pos": "WR",
+        "team": "MIA",
+        "age": 25,
+        "exp": 2,
+        "injury": null,
+        "rank": 177,
+        "count": 12408,
+        "rostered_in_league": false
+      },
+      {
+        "id": "13413",
+        "name": "Cyrus Allen",
+        "pos": "WR",
+        "team": "KC",
+        "age": 23,
+        "exp": 0,
+        "injury": null,
+        "rank": 181,
+        "count": 12096,
+        "rostered_in_league": true
+      },
+      {
+        "id": "10219",
+        "name": "Chris Rodriguez",
+        "pos": "RB",
+        "team": "JAX",
+        "age": 26,
+        "exp": 3,
+        "injury": null,
+        "rank": 125,
+        "count": 11682,
+        "rostered_in_league": true
+      },
+      {
+        "id": "9511",
+        "name": "Keaton Mitchell",
+        "pos": "RB",
+        "team": "LAC",
+        "age": 24,
+        "exp": 3,
+        "injury": null,
+        "rank": 148,
+        "count": 11628,
         "rostered_in_league": true
       },
       {
@@ -11423,11 +11312,23 @@
         "name": "Darren Waller",
         "pos": "TE",
         "team": "CAR",
-        "age": 33,
+        "age": 34,
         "exp": 11,
         "injury": null,
         "rank": 355,
-        "count": 9648,
+        "count": 11295,
+        "rostered_in_league": false
+      },
+      {
+        "id": "6149",
+        "name": "Unknown player 6149",
+        "pos": null,
+        "team": null,
+        "age": null,
+        "exp": null,
+        "injury": null,
+        "rank": 1000000000,
+        "count": 10638,
         "rostered_in_league": false
       },
       {
@@ -11439,8 +11340,104 @@
         "exp": 0,
         "injury": null,
         "rank": 113,
-        "count": 9648,
+        "count": 10359,
         "rostered_in_league": true
+      },
+      {
+        "id": "3321",
+        "name": "Unknown player 3321",
+        "pos": null,
+        "team": null,
+        "age": null,
+        "exp": null,
+        "injury": null,
+        "rank": 1000000000,
+        "count": 10272,
+        "rostered_in_league": false
+      },
+      {
+        "id": "11624",
+        "name": "Xavier Worthy",
+        "pos": "WR",
+        "team": "KC",
+        "age": 23,
+        "exp": 2,
+        "injury": null,
+        "rank": 122,
+        "count": 9891,
+        "rostered_in_league": true
+      },
+      {
+        "id": "12530",
+        "name": "Travis Hunter",
+        "pos": "DB",
+        "team": "JAX",
+        "age": 23,
+        "exp": 1,
+        "injury": null,
+        "rank": 103,
+        "count": 9888,
+        "rostered_in_league": true
+      },
+      {
+        "id": "13298",
+        "name": "KC Concepcion",
+        "pos": "WR",
+        "team": "CLE",
+        "age": 21,
+        "exp": 0,
+        "injury": null,
+        "rank": 111,
+        "count": 9819,
+        "rostered_in_league": true
+      },
+      {
+        "id": "12457",
+        "name": "Jaydon Blue",
+        "pos": "RB",
+        "team": "PHI",
+        "age": 22,
+        "exp": 1,
+        "injury": null,
+        "rank": 189,
+        "count": 9664,
+        "rostered_in_league": true
+      },
+      {
+        "id": "8180",
+        "name": "Jalen Nailor",
+        "pos": "WR",
+        "team": "LV",
+        "age": 27,
+        "exp": 4,
+        "injury": null,
+        "rank": 169,
+        "count": 9522,
+        "rostered_in_league": false
+      },
+      {
+        "id": "13296",
+        "name": "Caleb Douglas",
+        "pos": "WR",
+        "team": "MIA",
+        "age": 23,
+        "exp": 0,
+        "injury": null,
+        "rank": 197,
+        "count": 9344,
+        "rostered_in_league": true
+      },
+      {
+        "id": "9225",
+        "name": "Tank Bigsby",
+        "pos": "RB",
+        "team": "PHI",
+        "age": 24,
+        "exp": 3,
+        "injury": null,
+        "rank": 147,
+        "count": 9317,
+        "rostered_in_league": false
       }
     ]
   }
