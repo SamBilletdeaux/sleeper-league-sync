@@ -1,6 +1,6 @@
 # KingKings Fantasy Football — live league brief
 
-Generated **2026-10-20T14:21:22Z** (UTC). League id `1359238964875132928`.
+Generated **2026-10-21T14:31:35Z** (UTC). League id `1359238964875132928`.
 
 > **Read this first.** This is a live brief for a Sleeper dynasty fantasy football league. It is rebuilt from the Sleeper API every time this page is requested, so it is current as of the timestamp above and you do not need to fetch anything else to answer questions about this league. Answer only from what is written here. Every team and every rostered player in the league appears below, so if a player is not in this document, that player is not in this league — say so instead of guessing. Players are written as `<sleeper_id> <name>`. The **Reference** section at the end states plainly what this document does and does not cover.
 
@@ -42,7 +42,7 @@ blk_kick=2, bonus_pass_yd_300=3, bonus_pass_yd_400=4, bonus_rec_yd_100=1, bonus_
 | 6 | The Fart Smugglers | Bres89 | 9 | 3-3-0 | 869.52 | 816.9 | 100 |
 | 7 | John’s Team | JawnsTeam | 6 | 2-4-0 | 886.46 | 947.66 | 100 |
 | 8 | Bama Crimson Tide 1955 | DavisMacLeod | 10 | 2-4-0 | 885.2 | 938.28 | 100 |
-| 9 | Lamar Jackin Off | gregtate | 2 | 2-4-0 | 787.08 | 885.2 | 100 |
+| 9 | The Clots  | gregtate | 2 | 2-4-0 | 787.08 | 885.2 | 100 |
 | 10 | Premium Tight Ends | sambilletdeaux | 4 | 1-5-0 | 742.5 | 996.3 | 100 |
 
 `roster_id` is the join key Sleeper uses — its API identifies teams by that number rather than by name.
@@ -70,29 +70,30 @@ Each team's full roster. The summary line under each heading is precomputed — 
 
 ### Auburn Cadillacs (roster_id 1, owner jakebridges87)
 
-25 players · QB 4, RB 8, WR 9, TE 2, K 1, DEF 1 · average age 26.9 · 7 aged 25 or under
+27 players · QB 5, RB 9, WR 9, TE 2, K 1, DEF 1 · average age 26.8 · 7 aged 25 or under
 
 Record 4-2-0 · PF 1095.22 · PA 909.6 · FAAB left 100
 
 Lineup gaps: exactly 1 K with no backup; exactly 1 DEF with no backup.
 
-- **QB** (4)
-  - 12545 Tyler Shough (QB, NO, 27yo)
-  - 3257 Jacoby Brissett (QB, ARI, 33yo)
-  - 11563 Bo Nix (QB, DEN, 26yo)
+- **QB** (5)
   - 3163 Jared Goff (QB, DET, 32yo)
-- **RB** (8)
-  - 8228 Jaylen Warren (RB, PIT, 27yo)
-  - 8129 Dameon Pierce (RB, PHI, 26yo)
+  - 12545 Tyler Shough (QB, NO, 27yo)
+  - 11563 Bo Nix (QB, DEN, 26yo)
+  - 3257 Jacoby Brissett (QB, ARI, 33yo)
+  - 9230 Tanner McKee (QB, PHI, 26yo)
+- **RB** (9)
   - 9224 Chase Brown (RB, CIN, 26yo)
+  - 8228 Jaylen Warren (RB, PIT, 27yo)
   - 7567 Kenny Gainwell (RB, TB, 27yo)
-  - 12533 Jacory Croskey-Merritt (RB, WAS, 25yo) — IR
-  - 4035 Alvin Kamara (RB, NO, 31yo) — Questionable
+  - 11655 Tyrone Tracy (RB, NYG, 26yo)
+  - 4035 Alvin Kamara (RB, NO, 31yo)
+  - 8129 Dameon Pierce (RB, PHI, 26yo)
   - 13337 Emmett Johnson (RB, KC, 23yo, rookie) [taxi]
   - 11583 Jonathon Brooks (RB, CAR, 23yo) — IR [IR]
+  - 12533 Jacory Croskey-Merritt (RB, WAS, 25yo) — IR [IR]
 - **WR** (9)
   - 6786 CeeDee Lamb (WR, DAL, 27yo)
-  - 2133 Davante Adams (WR, LAR, 33yo) — Out
   - 8167 Christian Watson (WR, GB, 27yo)
   - 5846 DK Metcalf (WR, PIT, 28yo)
   - 8126 Wan'Dale Robinson (WR, TEN, 25yo)
@@ -100,15 +101,16 @@ Lineup gaps: exactly 1 K with no backup; exactly 1 DEF with no backup.
   - 11624 Xavier Worthy (WR, KC, 23yo)
   - 11834 Devaughn Vele (WR, NO, 28yo)
   - 13298 KC Concepcion (WR, CLE, 22yo, rookie) [taxi]
+  - 2133 Davante Adams (WR, LAR, 33yo) — IR [IR]
 - **TE** (2)
   - 8130 Trey McBride (TE, ARI, 26yo)
   - 13349 Eli Stowers (TE, PHI, 23yo, rookie) — IR [taxi]
 - **K** (1)
   - 3451 Ka'imi Fairbairn (K, HOU, 32yo)
 - **DEF** (1)
-  - NE New England Patriots (DEF, NE)
+  - NYJ New York Jets (DEF, NYJ)
 
-### Lamar Jackin Off (roster_id 2, owner gregtate)
+### The Clots  (roster_id 2, owner gregtate)
 
 27 players · QB 4, RB 7, WR 9, TE 4, K 1, DEF 1, DB 1 · average age 27.3 · 6 aged 25 or under
 
@@ -119,7 +121,7 @@ Lineup gaps: exactly 1 K with no backup; exactly 1 DEF with no backup.
 - **QB** (4)
   - 5849 Kyler Murray (QB, MIN, 29yo)
   - 4943 Sam Darnold (QB, SEA, 29yo)
-  - 4881 Lamar Jackson (QB, BAL, 29yo) — Out
+  - 4881 Lamar Jackson (QB, BAL, 29yo) — Questionable
   - 5870 Daniel Jones (QB, IND, 29yo)
 - **RB** (7)
   - 4034 Christian McCaffrey (RB, SF, 30yo)
@@ -153,42 +155,43 @@ Lineup gaps: exactly 1 K with no backup; exactly 1 DEF with no backup.
 
 ### The Cute Boys (roster_id 3, owner CuteBoys33)
 
-24 players · QB 3, RB 8, WR 8, TE 3, K 1, DEF 1 · average age 26.3 · 11 aged 25 or under
+25 players · QB 3, RB 8, WR 8, TE 3, K 2, DEF 1 · average age 26.6 · 11 aged 25 or under
 
 Record 3-3-0 · PF 972.08 · PA 939.2 · FAAB left 100
 
-Lineup gaps: exactly 1 K with no backup; exactly 1 DEF with no backup.
+Lineup gaps: exactly 1 DEF with no backup.
 
 - **QB** (3)
-  - 6797 Justin Herbert (QB, LAC, 28yo)
   - 6770 Joe Burrow (QB, CIN, 29yo)
   - 8161 Malik Willis (QB, MIA, 27yo)
+  - 6797 Justin Herbert (QB, LAC, 28yo)
 - **RB** (8)
   - 6813 Jonathan Taylor (RB, IND, 27yo)
+  - 4199 Aaron Jones (RB, MIN, 31yo)
   - 12490 Bhayshul Tuten (RB, JAX, 23yo)
   - 12489 RJ Harvey (RB, DEN, 25yo)
-  - 4199 Aaron Jones (RB, MIN, 31yo) — Questionable
   - 11581 MarShawn Lloyd (RB, GB, 25yo)
-  - 5850 Josh Jacobs (RB, GB, 28yo) — NA [taxi]
-  - 13405 Kaytron Allen (RB, MIA, 23yo, rookie) — Out [taxi]
+  - 5850 Josh Jacobs (RB, GB, 28yo) [taxi]
+  - 13405 Kaytron Allen (RB, MIA, 23yo, rookie) [taxi]
   - 9225 Tank Bigsby (RB, PHI, 24yo) — IR [IR]
 - **WR** (8)
   - 7569 Nico Collins (WR, HOU, 27yo)
   - 7525 DeVonta Smith (WR, PHI, 27yo)
   - 8146 Garrett Wilson (WR, NYJ, 26yo)
-  - 9500 Josh Downs (WR, IND, 25yo)
   - 4037 Chris Godwin (WR, TB, 30yo)
   - 9754 Quentin Johnston (WR, LAC, 25yo)
-  - 9486 Dontayvion Wicks (WR, PHI, 25yo) — Questionable
+  - 9500 Josh Downs (WR, IND, 25yo)
+  - 9486 Dontayvion Wicks (WR, PHI, 25yo)
   - 13301 Antonio Williams (WR, WAS, 22yo, rookie) [taxi]
 - **TE** (3)
   - 4217 George Kittle (TE, SF, 33yo)
   - 8131 Isaiah Likely (TE, NYG, 26yo)
   - 9484 Tucker Kraft (TE, GB, 25yo)
-- **K** (1)
+- **K** (2)
+  - 1945 Chris Boswell (K, PIT, 35yo)
   - 11786 Cam Little (K, JAX, 23yo)
 - **DEF** (1)
-  - PIT Pittsburgh Steelers (DEF, PIT)
+  - DEN Denver Broncos (DEF, DEN)
 
 ### Premium Tight Ends (roster_id 4, owner sambilletdeaux)
 
@@ -201,25 +204,25 @@ Lineup gaps: exactly 1 K with no backup; exactly 1 DEF with no backup.
 - **QB** (5)
   - 11566 Jayden Daniels (QB, WAS, 25yo)
   - 1166 Kirk Cousins (QB, LV, 38yo)
-  - 11559 Michael Penix (QB, ATL, 26yo) — Questionable
-  - 13275 Ty Simpson (QB, LAR, 23yo, rookie) — Out [taxi]
-  - 13272 Carson Beck (QB, ARI, 23yo, rookie) — Out [taxi]
+  - 11559 Michael Penix (QB, ATL, 26yo)
+  - 13275 Ty Simpson (QB, LAR, 23yo, rookie) [taxi]
+  - 13272 Carson Beck (QB, ARI, 23yo, rookie) [taxi]
 - **RB** (5)
   - 12481 Cam Skattebo (RB, NYG, 24yo)
   - 11586 Blake Corum (RB, LAR, 25yo)
   - 12507 Omarion Hampton (RB, LAC, 23yo)
-  - 13287 Jeremiyah Love (RB, ARI, 21yo, rookie) — Out
+  - 13287 Jeremiyah Love (RB, ARI, 21yo, rookie) — Questionable
   - 13414 Kaelon Black (RB, SF, 25yo, rookie)
 - **WR** (12)
   - 11635 Ladd McConkey (WR, LAC, 24yo) — Out
   - 12519 Luther Burden (WR, CHI, 22yo)
   - 13279 Carnell Tate (WR, TEN, 21yo, rookie)
   - 12501 Matthew Golden (WR, GB, 23yo)
-  - 10229 Rashee Rice (WR, KC, 26yo) — Out
+  - 10229 Rashee Rice (WR, KC, 26yo) — Questionable
   - 12492 Pat Bryant (WR, DEN, 23yo) — IR
   - 13413 Cyrus Allen (WR, KC, 23yo, rookie)
   - 9502 Tank Dell (WR, HOU, 26yo) — IR
-  - 13296 Caleb Douglas (WR, MIA, 23yo, rookie) — Out
+  - 13296 Caleb Douglas (WR, MIA, 23yo, rookie) — Questionable
   - 13394 Josh Cameron (WR, JAX, 23yo, rookie)
   - 13417 De'Zhaun Stribling (WR, SF, 23yo, rookie) — IR [IR]
   - 12484 Jayden Higgins (WR, HOU, 23yo) — IR [IR]
@@ -234,11 +237,11 @@ Lineup gaps: exactly 1 K with no backup; exactly 1 DEF with no backup.
 
 ### Team Davis (roster_id 5, owner charliemoonbeam)
 
-27 players · QB 7, RB 8, WR 7, TE 2, K 1, DEF 2 · average age 25.9 · 14 aged 25 or under
+27 players · QB 7, RB 8, WR 8, TE 2, K 1, DEF 1 · average age 25.8 · 15 aged 25 or under
 
 Record 3-3-0 · PF 915.22 · PA 900.04 · FAAB left 100
 
-Lineup gaps: exactly 1 K with no backup.
+Lineup gaps: exactly 1 K with no backup; exactly 1 DEF with no backup.
 
 - **QB** (7)
   - 8183 Brock Purdy (QB, SF, 26yo)
@@ -247,17 +250,17 @@ Lineup gaps: exactly 1 K with no backup.
   - 2307 Marcus Mariota (QB, WAS, 32yo) — Out
   - 13269 Fernando Mendoza (QB, LV, 23yo, rookie) [taxi]
   - 7591 Justin Fields (QB, KC, 27yo) [taxi]
-  - 12510 Jalen Milroe (QB, SEA, 23yo) — Out [taxi]
+  - 12510 Jalen Milroe (QB, SEA, 23yo) [taxi]
 - **RB** (8)
   - 8150 Kyren Williams (RB, LAR, 26yo)
   - 7611 Rhamondre Stevenson (RB, NE, 28yo)
   - 11584 Bucky Irving (RB, TB, 24yo)
   - 13305 Mike Washington (RB, LV, 23yo, rookie)
   - 13424 Seth McGowan (RB, IND, 24yo, rookie)
-  - 5892 David Montgomery (RB, HOU, 29yo) — Out [IR]
-  - 12534 Kyle Monangai (RB, CHI, 24yo) — Out [IR]
+  - 5892 David Montgomery (RB, HOU, 29yo) — Questionable [IR]
+  - 12534 Kyle Monangai (RB, CHI, 24yo) — Questionable [IR]
   - 11589 Trey Benson (RB, ARI, 24yo) — IR [IR]
-- **WR** (7)
+- **WR** (8)
   - 9493 Puka Nacua (WR, LAR, 25yo)
   - 8112 Drake London (WR, ATL, 25yo)
   - 12526 Tetairoa McMillan (WR, CAR, 23yo)
@@ -265,13 +268,13 @@ Lineup gaps: exactly 1 K with no backup.
   - 7564 Ja'Marr Chase (WR, CIN, 26yo)
   - 2449 Stefon Diggs (WR, WAS, 32yo)
   - 12509 Tre' Harris (WR, LAC, 24yo) — Out
+  - 12536 Jaylin Noel (WR, HOU, 24yo)
 - **TE** (2)
   - 7002 Juwan Johnson (TE, NO, 30yo)
   - 12517 Colston Loveland (TE, CHI, 22yo)
 - **K** (1)
   - 11533 Brandon Aubrey (K, DAL, 31yo)
-- **DEF** (2)
-  - KC Kansas City Chiefs (DEF, KC)
+- **DEF** (1)
   - HOU Houston Texans (DEF, HOU)
 
 ### John’s Team (roster_id 6, owner JawnsTeam)
@@ -291,7 +294,7 @@ Lineup gaps: exactly 1 K with no backup; exactly 1 DEF with no backup.
   - 6806 J.K. Dobbins (RB, DEN, 27yo)
   - 9221 Jahmyr Gibbs (RB, DET, 24yo)
   - 7021 Rico Dowdle (RB, PIT, 28yo)
-  - 13288 Nicholas Singleton (RB, TEN, 22yo, rookie) — Out
+  - 13288 Nicholas Singleton (RB, TEN, 22yo, rookie)
 - **WR** (10)
   - 5859 A.J. Brown (WR, NE, 29yo) — Questionable
   - 4983 DJ Moore (WR, BUF, 29yo) — Out
@@ -299,9 +302,9 @@ Lineup gaps: exactly 1 K with no backup; exactly 1 DEF with no backup.
   - 5947 Jakobi Meyers (WR, JAX, 29yo)
   - 6794 Justin Jefferson (WR, MIN, 27yo)
   - 5045 Courtland Sutton (WR, DEN, 31yo)
-  - 13294 Makai Lemon (WR, PHI, 22yo, rookie) — Questionable
-  - 11625 Adonai Mitchell (WR, NYJ, 24yo) — Out
-  - 7571 Rashod Bateman (WR, BAL, 26yo) — Out
+  - 13294 Makai Lemon (WR, PHI, 22yo, rookie)
+  - 11625 Adonai Mitchell (WR, NYJ, 24yo) — Doubtful
+  - 7571 Rashod Bateman (WR, BAL, 26yo) — Questionable
   - 13285 Malachi Fields (WR, NYG, 23yo, rookie) [taxi]
 - **TE** (2)
   - 9482 Michael Mayer (TE, LV, 25yo)
@@ -320,24 +323,24 @@ Record 6-0-0 · PF 975.44 · PA 869.48 · FAAB left 100
 Lineup gaps: exactly 1 DEF with no backup.
 
 - **QB** (3)
-  - 4984 Josh Allen (QB, BUF, 30yo)
   - 421 Matthew Stafford (QB, LAR, 38yo)
-  - 4892 Baker Mayfield (QB, TB, 31yo) — Out
+  - 4984 Josh Allen (QB, BUF, 30yo)
+  - 4892 Baker Mayfield (QB, TB, 31yo) — Questionable
 - **RB** (6)
-  - 8138 James Cook (RB, BUF, 27yo)
+  - 4866 Saquon Barkley (RB, PHI, 29yo) — Questionable
   - 6790 D'Andre Swift (RB, CHI, 27yo)
   - 7594 Chuba Hubbard (RB, CAR, 27yo)
-  - 4866 Saquon Barkley (RB, PHI, 29yo) — Out
   - 9508 Tyjae Spears (RB, TEN, 25yo)
+  - 8138 James Cook (RB, BUF, 27yo)
   - 4137 James Conner (RB, ARI, 31yo) — IR [IR]
 - **WR** (9)
-  - 2216 Mike Evans (WR, SF, 33yo) — Out
-  - 12542 Efton Chism (WR, NE, 24yo)
-  - 4454 Kendrick Bourne (WR, ARI, 31yo)
   - 6801 Tee Higgins (WR, CIN, 27yo)
+  - 4454 Kendrick Bourne (WR, ARI, 31yo)
+  - 2216 Mike Evans (WR, SF, 33yo) — Questionable
   - 5872 Deebo Samuel (WR, SF, 30yo) — Out
   - 13311 Chris Bell (WR, MIA, 22yo, rookie)
-  - 13268 Elijah Sarratt (WR, BAL, 23yo, rookie) — Out
+  - 13268 Elijah Sarratt (WR, BAL, 23yo, rookie)
+  - 12542 Efton Chism (WR, NE, 24yo)
   - 13281 Jordyn Tyson (WR, NO, 22yo, rookie) — IR [IR]
   - 6819 Michael Pittman (WR, PIT, 29yo) — IR [IR]
 - **TE** (3)
@@ -365,7 +368,7 @@ Lineup gaps: exactly 1 K with no backup; exactly 1 DEF with no backup.
 - **RB** (7)
   - 9509 Bijan Robinson (RB, ATL, 24yo)
   - 8136 Rachaad White (RB, WAS, 27yo)
-  - 12512 Quinshon Judkins (RB, CLE, 22yo) — Out
+  - 12512 Quinshon Judkins (RB, CLE, 22yo) — Questionable
   - 8154 Brian Robinson (RB, ATL, 27yo)
   - 12048 George Holani (RB, SEA, 26yo)
   - 13345 Jonah Coleman (RB, DEN, 23yo, rookie) — IR [taxi]
@@ -383,7 +386,7 @@ Lineup gaps: exactly 1 K with no backup; exactly 1 DEF with no backup.
 - **TE** (3)
   - 8110 Jake Ferguson (TE, DAL, 27yo)
   - 9480 Brenton Strange (TE, JAX, 25yo)
-  - 12518 Tyler Warren (TE, IND, 24yo) — Out
+  - 12518 Tyler Warren (TE, IND, 24yo) — Questionable
 - **K** (1)
   - 2020 Cairo Santos (K, CHI, 34yo)
 - **DEF** (1)
@@ -412,7 +415,7 @@ Lineup gaps: exactly 1 K with no backup; exactly 1 DEF with no backup.
 - **WR** (9)
   - 8137 George Pickens (WR, DAL, 25yo)
   - 11632 Malik Nabers (WR, NYG, 23yo)
-  - 7526 Jaylen Waddle (WR, DEN, 27yo) — Questionable
+  - 7526 Jaylen Waddle (WR, DEN, 27yo)
   - 1479 Keenan Allen (WR, IND, 34yo)
   - 8148 Jameson Williams (WR, DET, 25yo)
   - 11620 Rome Odunze (WR, CHI, 24yo)
@@ -430,31 +433,32 @@ Lineup gaps: exactly 1 K with no backup; exactly 1 DEF with no backup.
 
 ### Bama Crimson Tide 1955 (roster_id 10, owner DavisMacLeod)
 
-26 players · QB 3, RB 8, WR 10, TE 2, K 1, DEF 2 · average age 24.7 · 16 aged 25 or under
+26 players · QB 4, RB 8, WR 10, TE 2, K 1, DEF 1 · average age 25.1 · 16 aged 25 or under
 
 Record 2-4-0 · PF 885.2 · PA 938.28 · FAAB left 100
 
-Lineup gaps: exactly 1 K with no backup.
+Lineup gaps: exactly 1 K with no backup; exactly 1 DEF with no backup.
 
-- **QB** (3)
+- **QB** (4)
   - 9758 C.J. Stroud (QB, HOU, 25yo)
   - 9228 Bryce Young (QB, CAR, 25yo)
+  - 1373 Geno Smith (QB, NYJ, 36yo)
   - 6904 Jalen Hurts (QB, PHI, 28yo) — IR [IR]
 - **RB** (8)
   - 7588 Javonte Williams (RB, DAL, 26yo)
   - 8132 Tyler Allgeier (RB, ARI, 26yo)
   - 11576 Braelon Allen (RB, NYJ, 22yo)
-  - 8155 Breece Hall (RB, NYJ, 25yo) — Out
+  - 8155 Breece Hall (RB, NYJ, 25yo) — Questionable
   - 12529 TreVeyon Henderson (RB, NE, 23yo)
   - 11647 Kimani Vidal (RB, LAC, 25yo)
-  - 12495 Ollie Gordon (RB, MIA, 22yo) — Questionable
+  - 12495 Ollie Gordon (RB, MIA, 22yo)
   - 9226 De'Von Achane (RB, MIA, 25yo) — IR [IR]
 - **WR** (10)
   - 12514 Emeka Egbuka (WR, TB, 24yo)
   - 9997 Zay Flowers (WR, BAL, 26yo)
   - 13346 Denzel Boston (WR, CLE, 22yo, rookie)
   - 11631 Brian Thomas (WR, JAX, 24yo)
-  - 9756 Jordan Addison (WR, MIN, 24yo) — Out
+  - 9756 Jordan Addison (WR, MIN, 24yo) — Questionable
   - 10213 Tre Tucker (WR, LV, 25yo)
   - 11637 Keon Coleman (WR, BUF, 23yo)
   - 13274 Germie Bernard (WR, PIT, 22yo, rookie) [taxi]
@@ -462,11 +466,10 @@ Lineup gaps: exactly 1 K with no backup.
   - 10222 Jayden Reed (WR, GB, 26yo) — IR [IR]
 - **TE** (2)
   - 12506 Harold Fannin (TE, CLE, 22yo)
-  - 5844 T.J. Hockenson (TE, MIN, 29yo) — Out
+  - 5844 T.J. Hockenson (TE, MIN, 29yo) — Questionable
 - **K** (1)
   - 12185 Spencer Shrader (K, IND, 27yo)
-- **DEF** (2)
-  - CAR Carolina Panthers (DEF, CAR)
+- **DEF** (1)
   - MIN Minnesota Vikings (DEF, MIN)
 
 ## This week's matchups (NFL week 7)
@@ -477,22 +480,26 @@ No points have been scored yet this week — these are the scheduled pairings.
 - Auburn Cadillacs (roster 1) vs The Cute Boys (roster 3)
 - John’s Team (roster 6) vs Lola is the Boss (roster 7)
 - Team Davis (roster 5) vs Burrow it in me daddy (roster 8)
-- Lamar Jackin Off (roster 2) vs Bama Crimson Tide 1955 (roster 10)
+- The Clots  (roster 2) vs Bama Crimson Tide 1955 (roster 10)
 
 ## Recent moves
 
-No completed transactions have been recorded for the current week.
+The 3 most recent completed transactions, newest first.
+
+- **free agent** — Auburn Cadillacs added New York Jets; dropped New England Patriots
+- **free agent** — Auburn Cadillacs added Tanner McKee
+- **free agent** — Auburn Cadillacs added Tyrone Tracy
 
 ## Future rookie draft picks
 
 Who currently owns each future pick, after trades. `(own)` means the team's own original pick; otherwise the team it came from is named.
 
 **Auburn Cadillacs** (roster_id 1)
-- 2027: 1st (own), 1st (from Lamar Jackin Off), 3rd (own)
+- 2027: 1st (own), 1st (from The Clots ), 3rd (own)
 - 2028: 1st (own), 2nd (own), 3rd (own)
 - 2029: 1st (own), 2nd (own), 3rd (own)
 
-**Lamar Jackin Off** (roster_id 2)
+**The Clots ** (roster_id 2)
 - 2027: 2nd (from Auburn Cadillacs), 3rd (own), 3rd (from Team Davis)
 - 2028: 1st (own), 2nd (own), 3rd (own)
 - 2029: 1st (own), 2nd (own), 3rd (own)
@@ -503,7 +510,7 @@ Who currently owns each future pick, after trades. `(own)` means the team's own 
 - 2029: 1st (own), 2nd (own), 3rd (own)
 
 **Premium Tight Ends** (roster_id 4)
-- 2027: 1st (own), 1st (from Bama Crimson Tide 1955), 2nd (from Lamar Jackin Off), 2nd (from The Cute Boys), 2nd (own), 2nd (from John’s Team)
+- 2027: 1st (own), 1st (from Bama Crimson Tide 1955), 2nd (from The Clots ), 2nd (from The Cute Boys), 2nd (own), 2nd (from John’s Team)
 - 2028: 1st (own), 2nd (own), 3rd (own)
 - 2029: 1st (own), 2nd (own), 3rd (own)
 
@@ -543,43 +550,43 @@ Players on no roster in this league who are on an NFL team and have had recent n
 
 ### QB (60)
 
-- 1373 Geno Smith (QB, NYJ, 36yo)
 - 12524 Shedeur Sanders (QB, CLE, 24yo)
 - 6768 Tua Tagovailoa (QB, ATL, 28yo)
 - 13310 Miller Moss (QB, CHI, 24yo, rookie)
 - 6136 Jarrett Stidham (QB, DEN, 30yo)
 - 13597 Matthew Caldwell (QB, LAR, 23yo, rookie) — IR
 - 13816 Mark Gronowski (QB, HOU, 25yo, rookie)
-- 13289 Drew Allar (QB, PIT, 22yo, rookie) — Out
-- 7583 Sam Ehlinger (QB, DEN, 28yo) — Out
+- 13289 Drew Allar (QB, PIT, 22yo, rookie)
+- 7583 Sam Ehlinger (QB, DEN, 28yo)
 - 13303 Cade Klubnik (QB, NYJ, 23yo, rookie)
 - 7527 Mac Jones (QB, SF, 28yo)
 - 2306 Jameis Winston (QB, NYG, 32yo)
 - 9229 Anthony Richardson (QB, IND, 24yo)
 - 19 Joe Flacco (QB, CIN, 41yo)
 - 12705 Graham Mertz (QB, HOU, 25yo) — IR
-- 12511 Will Howard (QB, PIT, 25yo) — Out
-- 11557 Joe Milton (QB, PHI, 26yo) — Out
-- 12775 Max Brosmer (QB, MIN, 25yo) — Out
-- 13404 Garrett Nussmeier (QB, KC, 24yo, rookie) — Out
-- 13295 Behren Morton (QB, NE, 24yo, rookie) — Out
-- 13306 Taylen Green (QB, CLE, 24yo, rookie) — Out
+- 12511 Will Howard (QB, PIT, 25yo)
+- 11557 Joe Milton (QB, PHI, 26yo)
+- 12775 Max Brosmer (QB, MIN, 25yo)
+- 13404 Garrett Nussmeier (QB, KC, 24yo, rookie)
+- 13295 Behren Morton (QB, NE, 24yo, rookie)
+- 13306 Taylen Green (QB, CLE, 24yo, rookie)
 - 12500 Quinn Ewers (QB, JAX, 23yo)
-- 7585 Davis Mills (QB, HOU, 27yo)
+- 7585 Davis Mills (QB, HOU, 28yo)
 - 260 Josh Johnson (QB, CIN, 40yo)
 - 11256 Tyson Bagent (QB, CHI, 26yo)
-- 12470 Riley Leonard (QB, IND, 24yo) — Out
-- 1737 Case Keenum (QB, CHI, 38yo) — Out
+- 12470 Riley Leonard (QB, IND, 24yo)
+- 1737 Case Keenum (QB, CHI, 38yo)
 - 4464 Nick Mullens (QB, JAX, 31yo)
 - 13428 Joey Aguilar (QB, JAX, 25yo, rookie)
 - 11648 Kedon Slovis (QB, GB, 25yo)
+- 7605 Kyle Trask (QB, DAL, 28yo)
 - 10983 Sean Clifford (QB, CIN, 28yo)
 - 6185 Easton Stick (QB, TB, 31yo)
 - 12486 Dillon Gabriel (QB, CLE, 25yo) — IR
 - 6037 Brett Rypien (QB, TB, 30yo)
 - 11558 Sam Hartman (QB, WAS, 27yo)
 - 12494 Kyle McCord (QB, MIA, 24yo)
-- 10866 Aidan O'Connell (QB, LV, 28yo) — Out
+- 10866 Aidan O'Connell (QB, LV, 28yo)
 - 827 Tyrod Taylor (QB, GB, 37yo)
 - 12773 DJ Uiagalelei (QB, LAC, 25yo)
 - 12792 Garrett Greene (QB, TB, 25yo)
@@ -588,10 +595,10 @@ Players on no roster in this league who are on an NFL team and have had recent n
 - 13557 Athan Kaliakmanis (QB, WAS, 23yo, rookie)
 - 6111 Jake Browning (QB, LAC, 30yo)
 - 7610 Trey Lance (QB, LAC, 26yo) — IR
-- 12477 Kurtis Rourke (QB, SF, 25yo) — Out
+- 12477 Kurtis Rourke (QB, SF, 25yo)
 - 6011 Gardner Minshew (QB, ARI, 30yo)
 - 13335 Cole Payton (QB, PHI, 23yo, rookie)
-- 10215 Jake Haener (QB, NYG, 27yo) — Out
+- 10215 Jake Haener (QB, NYG, 27yo)
 - 4972 Mason Rudolph (QB, PIT, 31yo)
 - 3976 Mitchell Trubisky (QB, TEN, 32yo)
 - 13350 Joe Fagnano (QB, BAL, 25yo, rookie)
@@ -606,12 +613,10 @@ Players on no roster in this league who are on an NFL team and have had recent n
 
 ### RB (100)
 
-- 11655 Tyrone Tracy (RB, NYG, 26yo)
 - 12469 Dylan Sampson (RB, CLE, 22yo) — IR
-- 9506 Sean Tucker (RB, TB, 24yo) — Out
+- 9506 Sean Tucker (RB, TB, 24yo) — Questionable
 - 11575 Ray Davis (RB, BUF, 26yo)
 - 12476 Devin Neal (RB, WAS, 23yo)
-- 7528 Najee Harris (RB, NYG, 28yo)
 - 12504 Kaleb Johnson (RB, GB, 23yo)
 - 11643 Jaylen Wright (RB, MIA, 23yo)
 - 13347 Demond Claiborne (RB, MIN, 23yo, rookie)
@@ -635,11 +640,11 @@ Players on no roster in this league who are on an NFL team and have had recent n
 - 4147 Samaje Perine (RB, CIN, 31yo)
 - 13277 CJ Donaldson (RB, NO, 22yo, rookie)
 - 8207 Tyler Goodson (RB, DAL, 25yo)
-- 13423 Eli Heidenreich (RB, PIT, 23yo, rookie) — Out
+- 13423 Eli Heidenreich (RB, PIT, 23yo, rookie)
 - 12491 Corey Kiner (RB, NE, 24yo)
 - 12356 Jabari Small (RB, DET, 25yo)
 - 13348 J'Mari Taylor (RB, JAX, 24yo, rookie)
-- 11199 Emari Demercado (RB, DAL, 27yo) — Out
+- 11199 Emari Demercado (RB, DAL, 27yo)
 - 12471 DJ Giddens (RB, IND, 23yo)
 - 12544 LeQuint Allen (RB, JAX, 22yo)
 - 12969 Lan Larison (RB, NE, 25yo)
@@ -648,13 +653,13 @@ Players on no roster in this league who are on an NFL team and have had recent n
 - 13419 Jaydn Ott (RB, KC, 23yo, rookie)
 - 11729 Sione Vaki (RB, DET, 25yo)
 - 6918 Salvon Ahmed (RB, CHI, 27yo)
-- 13418 Robert Henry (RB, SEA, 24yo, rookie) — Out
+- 7561 Elijah Mitchell (RB, PHI, 28yo)
+- 13418 Robert Henry (RB, SEA, 24yo, rookie)
 - 6039 Ty Johnson (RB, BUF, 29yo)
 - 11280 Brady Russell (RB, SEA, 28yo)
 - 13516 Max Bredeson (RB, MIN, 24yo, rookie)
 - 8223 Velus Jones (WR, SEA, 29yo)
 - 13010 Jordan Waters (RB, LAR, 25yo)
-- 13852 Dontae McMillan (RB, SEA, 25yo, rookie)
 - 13603 Gregory Desrosiers (RB, LAC, 25yo, rookie)
 - 12939 Anthony Tyus (RB, CAR, 23yo)
 - 12656 Robbie Ouzts (RB, SEA, 24yo) — IR
@@ -670,7 +675,7 @@ Players on no roster in this league who are on an NFL team and have had recent n
 - 8195 Ronnie Rivers (RB, LAR, 27yo) — IR
 - 11573 Frank Gore (RB, BUF, 24yo)
 - 7204 Reggie Gilliam (RB, NE, 29yo) — IR
-- 11582 Carson Steele (RB, PHI, 23yo) — Questionable
+- 11582 Carson Steele (RB, PHI, 23yo) — Out
 - 8116 Pierre Strong (RB, GB, 27yo)
 - 4663 Austin Ekeler (RB, WAS, 31yo)
 - 8139 Zamir White (RB, NO, 27yo)
@@ -706,6 +711,8 @@ Players on no roster in this league who are on an NFL team and have had recent n
 - 8181 Connor Heyward (RB, LV, 27yo)
 - 10235 Roschon Johnson (RB, CHI, 25yo)
 - 11570 Rasheen Ali (RB, BAL, 25yo)
+- 9220 Evan Hull (RB, ARI, 25yo)
+- 11577 Will Shipley (RB, PHI, 24yo) — IR
 
 ### WR (100)
 
@@ -719,7 +726,6 @@ Players on no roster in this league who are on an NFL team and have had recent n
 - 12535 Isaac TeSlaa (WR, DET, 24yo)
 - 12499 Elic Ayomanor (WR, TEN, 23yo)
 - 13320 Zachariah Branch (WR, ATL, 22yo, rookie)
-- 12536 Jaylin Noel (WR, HOU, 24yo)
 - 9494 Marvin Mims (WR, DEN, 24yo)
 - 12547 Kyle Williams (WR, NE, 23yo)
 - 13317 Ted Hurst (WR, TB, 22yo, rookie)
@@ -734,6 +740,7 @@ Players on no roster in this league who are on an NFL team and have had recent n
 - 12475 Ricky White (WR, SEA, 24yo)
 - 13208 Kyrese Rowan (WR, NO, 25yo)
 - 2750 DeAndre Carter (WR, DET, 33yo)
+- 11311 Jason Brownlee (WR, NYG, 27yo)
 - 12884 Quincy Skinner (WR, GB, 23yo)
 - 12803 Luke Grimm (WR, LAC, 25yo)
 - 13411 Zavion Thomas (WR, CHI, 22yo, rookie)
@@ -748,21 +755,21 @@ Players on no roster in this league who are on an NFL team and have had recent n
 - 6386 Alex Bachman (WR, LAR, 30yo)
 - 6798 Jalen Reagor (WR, MIA, 27yo)
 - 5781 Malik Turner (WR, SF, 30yo)
-- 2078 Odell Beckham (WR, MIN, 33yo) — Out
-- 8917 KaVontae Turpin (WR, DAL, 30yo) — Out
+- 2078 Odell Beckham (WR, MIN, 33yo)
+- 8917 KaVontae Turpin (WR, DAL, 30yo) — Questionable
 - 13890 Michael Briscoe (WR, MIN, 24yo, rookie)
 - 13533 Barion Brown (WR, NO, 22yo, rookie)
 - 13420 Bryce Lance (WR, NO, 24yo, rookie)
 - 11157 Brycen Tremayne (WR, CAR, 26yo)
-- 11895 Mason Tipton (WR, NO, 26yo) — PUP
 - 9501 DeMario Douglas (WR, NE, 25yo)
+- 11895 Mason Tipton (WR, NO, 26yo) — PUP
 - 11911 Jeshaun Jones (WR, MIN, 26yo)
 - 11320 Nikko Remigio (WR, KC, 26yo)
 - 12788 Will Sheppard (WR, MIA, 24yo)
+- 7559 Ihmir Smith-Marsette (WR, CAR, 27yo)
 - 13329 Malik Benson (WR, LV, 24yo, rookie)
 - 10226 Andrei Iosivas (WR, CIN, 27yo) — IR
 - 12889 Beaux Collins (WR, ATL, 23yo) — IR
-- 7559 Ihmir Smith-Marsette (WR, CAR, 27yo)
 - 8119 Jahan Dotson (WR, ATL, 26yo)
 - 13380 Brenen Thompson (WR, LAC, 23yo, rookie)
 - 8076 Michael Bandy (WR, DEN, 28yo)
@@ -773,7 +780,7 @@ Players on no roster in this league who are on an NFL team and have had recent n
 - 11626 Xavier Legette (WR, CAR, 25yo) — IR
 - 2197 Brandin Cooks (WR, SF, 33yo)
 - 11306 Xavier Gipson (WR, PHI, 25yo)
-- 13124 Jeremiah Webb (WR, NE, 25yo) — IR
+- 13124 Jeremiah Webb (WR, NE, 25yo) — Questionable
 - 5374 Justin Watson (WR, KC, 30yo)
 - 8250 Tay Martin (WR, DET, 28yo)
 - 7039 Cody White (WR, LV, 27yo)
@@ -782,22 +789,22 @@ Players on no roster in this league who are on an NFL team and have had recent n
 - 12267 Qadir Ismail (WR, CHI, 26yo)
 - 6290 Scotty Miller (WR, CHI, 29yo)
 - 8223 Velus Jones (WR, SEA, 29yo)
-- 13270 CJ Daniels (WR, LAR, 24yo, rookie) — Out
+- 13270 CJ Daniels (WR, LAR, 24yo, rookie)
 - 8861 Irvin Charles (WR, SEA, 29yo)
 - 11168 Xavier Smith (WR, SF, 29yo)
 - 13963 Nick DeGennaro (WR, WAS, rookie)
 - 12925 Jamaal Pritchett (WR, NYJ, 23yo)
-- 13173 Jimmy Holiday (WR, KC, 24yo) — IR
 - 2334 Phillip Dorsett (WR, LV, 33yo)
+- 13173 Jimmy Holiday (WR, KC, 24yo) — IR
 - 11636 Johnny Wilson (WR, PHI, 25yo) — IR
 - 7596 Elijah Moore (WR, PHI, 26yo)
 - 13582 Anthony Smith (WR, DAL, 24yo, rookie)
 - 12848 Josh Kelly (WR, HOU, 25yo)
 - 11762 Anthony Gould (WR, IND, 25yo) — Questionable
 - 4351 Tim Patrick (WR, NYJ, 32yo)
+- 12539 Arian Smith (WR, NYJ, 25yo) — IR
 - 13392 Jeff Caldwell (WR, KC, 23yo, rookie) — IR
 - 12460 Antwane Wells (WR, ATL, 25yo)
-- 12539 Arian Smith (WR, NYJ, 25yo) — IR
 - 12865 AJ Henning (WR, MIA, 25yo)
 - 13830 Kyle Dixon (WR, NE, 26yo, rookie)
 - 13825 Malik McClain (WR, NYJ, 24yo, rookie)
@@ -818,7 +825,7 @@ Players on no roster in this league who are on an NFL team and have had recent n
 - 6865 Colby Parkinson (TE, LAR, 27yo)
 - 8210 Chig Okonkwo (TE, WAS, 27yo)
 - 12498 Mason Taylor (TE, NYJ, 22yo)
-- 11597 Theo Johnson (TE, NYG, 25yo) — Out
+- 11597 Theo Johnson (TE, NYG, 25yo) — Questionable
 - 8111 Cade Otton (TE, TB, 27yo)
 - 12502 Gunnar Helm (TE, TEN, 24yo)
 - 8698 Jake Tonges (TE, SF, 27yo) — IR
@@ -840,36 +847,36 @@ Players on no roster in this league who are on an NFL team and have had recent n
 - 13421 Eli Raridon (TE, NE, 22yo, rookie)
 - 3258 Nick Vannett (TE, BAL, 33yo)
 - 4995 Ian Thomas (TE, LV, 30yo)
-- 4443 Pharaoh Brown (TE, IND, 32yo)
 - 8500 John FitzPatrick (TE, CLE, 26yo)
+- 4443 Pharaoh Brown (TE, IND, 32yo)
 - 12735 Caleb Lohner (TE, DEN, 25yo) — IR
 - 13210 Drake Dabney (TE, GB, 24yo)
 - 11201 Blake Whiteheart (TE, CLE, 26yo)
 - 13431 Miles Kitselman (TE, DET, 24yo, rookie)
-- 3202 Austin Hooper (TE, ATL, 31yo)
 - 11113 Joel Wilson (TE, TEN, 26yo)
-- 11595 Jared Wiley (TE, KC, 25yo) — Out
+- 3202 Austin Hooper (TE, ATL, 31yo)
+- 11595 Jared Wiley (TE, KC, 25yo)
 - 11508 Princeton Fant (TE, DAL, 27yo) — IR
 - 13355 DJ Rogers (TE, DAL, 25yo, rookie) — IR
+- 7568 Brevin Jordan (TE, HOU, 26yo)
 - 12521 Elijah Arroyo (TE, SEA, 23yo) — Out
 - 7535 Hunter Long (TE, ARI, 28yo) — IR
-- 7568 Brevin Jordan (TE, HOU, 26yo)
-- 4066 Evan Engram (TE, DEN, 32yo)
 - 11371 Julian Hill (TE, NE, 26yo) — IR
+- 4066 Evan Engram (TE, DEN, 32yo)
 - 13308 Bauer Sharp (TE, TB, 23yo, rookie)
 - 9479 Darnell Washington (TE, PIT, 25yo)
-- 13400 Justin Joly (TE, MIA, 22yo, rookie) — Out
+- 13400 Justin Joly (TE, MIA, 22yo, rookie) — Questionable
 - 13407 Carson Towt (TE, IND, 25yo, rookie) — IR
 - 12357 David Martin-Robinson (TE, TEN, 26yo)
 - 11820 Devin Culp (TE, CLE, 26yo)
 - 6826 Cole Kmet (TE, CHI, 27yo)
 - 7842 Luke Farrell (TE, SF, 29yo)
 - 13630 Evan Svoboda (TE, LAC, 23yo, rookie) — Out
-- 13324 Matt Hibner (TE, BAL, 24yo, rookie) — Out
-- 7602 Kylen Granson (TE, TEN, 28yo) — Out
 - 12480 Moliki Matavao (TE, NO, 23yo) — IR
+- 13324 Matt Hibner (TE, BAL, 24yo, rookie) — Questionable
+- 7602 Kylen Granson (TE, TEN, 28yo)
 - 11716 Tip Reiman (TE, ARI, 25yo) — PUP
-- 13282 Jack Endries (TE, CIN, 22yo, rookie) — Out
+- 13282 Jack Endries (TE, CIN, 22yo, rookie)
 - 13249 Thomas Gordon (TE, DET, 26yo)
 - 13434 Will Kacmarek (TE, MIA, 23yo, rookie)
 
@@ -877,7 +884,6 @@ Players on no roster in this league who are on an NFL team and have had recent n
 
 - 8259 Cameron Dicker (K, LAC, 26yo)
 - 12711 Tyler Loop (K, BAL, 25yo)
-- 1945 Chris Boswell (K, PIT, 35yo)
 - 7839 Evan McPherson (K, CIN, 27yo)
 - 4227 Harrison Butker (K, KC, 31yo)
 - 5189 Eddy Pineiro (K, SF, 31yo)
@@ -885,9 +891,9 @@ Players on no roster in this league who are on an NFL team and have had recent n
 - 13545 Trey Smack (K, GB, 23yo, rookie)
 - 6650 Chase McLaughlin (K, TB, 30yo)
 - 4195 Jake Elliott (K, PHI, 31yo)
-- 7922 Riley Patterson (K, MIA, 27yo)
 - 11653 Charlie Smyth (K, NO, 25yo)
 - 7042 Tyler Bass (K, BUF, 29yo)
+- 4233 Zane Gonzalez (K, MIA, 31yo)
 - 10937 Jake Moody (K, BAL, 26yo)
 - 11261 Andre Szmyt (K, CLE, 28yo)
 - 10955 Chad Ryland (K, ARI, 27yo)
@@ -898,27 +904,30 @@ Players on no roster in this league who are on an NFL team and have had recent n
 - 5119 Jason Sanders (K, NYJ, 30yo)
 - 13968 Drew Stevens (K, WAS, 22yo, rookie)
 - 5095 Daniel Carlson (K, NO, 31yo)
+- 1433 Brandon McManus (K, LAR, 35yo)
 - 11058 Blake Grupe (K, LAR, 27yo) — IR
 - 13804 Kansei Matsuzawa (K, LV, 27yo, rookie)
 
-### DEF (20)
+### DEF (22)
 
 - ARI Arizona Cardinals (DEF, ARI)
 - ATL Atlanta Falcons (DEF, ATL)
 - BUF Buffalo Bills (DEF, BUF)
+- CAR Carolina Panthers (DEF, CAR)
 - CHI Chicago Bears (DEF, CHI)
 - CIN Cincinnati Bengals (DEF, CIN)
 - CLE Cleveland Browns (DEF, CLE)
 - DAL Dallas Cowboys (DEF, DAL)
-- DEN Denver Broncos (DEF, DEN)
 - DET Detroit Lions (DEF, DET)
 - GB Green Bay Packers (DEF, GB)
 - JAX Jacksonville Jaguars (DEF, JAX)
+- KC Kansas City Chiefs (DEF, KC)
 - LAC Los Angeles Chargers (DEF, LAC)
 - MIA Miami Dolphins (DEF, MIA)
+- NE New England Patriots (DEF, NE)
 - NO New Orleans Saints (DEF, NO)
 - NYG New York Giants (DEF, NYG)
-- NYJ New York Jets (DEF, NYJ)
+- PIT Pittsburgh Steelers (DEF, PIT)
 - SF San Francisco 49ers (DEF, SF)
 - TB Tampa Bay Buccaneers (DEF, TB)
 - TEN Tennessee Titans (DEF, TEN)
@@ -928,61 +937,61 @@ Players on no roster in this league who are on an NFL team and have had recent n
 
 Activity across every Sleeper league, not just this one — a signal about which players are being picked up generally.
 
-- 13276 Omar Cooper (WR, NYJ, 22yo, rookie) · 2328616 transactions — already rostered in this league
-- CLE Cleveland Browns (DEF, CLE) · 887915 transactions
-- 12718 Konata Mumpfield (WR, LAR, 23yo) · 549765 transactions
-- 9502 Tank Dell (WR, HOU, 26yo) — IR · 458008 transactions — already rostered in this league
-- 9758 C.J. Stroud (QB, HOU, 25yo) · 434770 transactions — already rostered in this league
-- 5849 Kyler Murray (QB, MIN, 29yo) · 391048 transactions — already rostered in this league
-- 9482 Michael Mayer (TE, LV, 25yo) · 358668 transactions — already rostered in this league
-- 10213 Tre Tucker (WR, LV, 25yo) · 275148 transactions — already rostered in this league
-- 7553 Kyle Pitts (TE, ATL, 26yo) · 268394 transactions — already rostered in this league
-- 10235 Roschon Johnson (RB, CHI, 25yo) · 267576 transactions
-- 6650 Chase McLaughlin (K, TB, 30yo) · 238952 transactions
-- 12487 Terrance Ferguson (TE, LAR, 23yo) — IR · 234688 transactions — already rostered in this league
-- MIN Minnesota Vikings (DEF, MIN) · 218520 transactions — already rostered in this league
-- 11539 Jake Bates (K, DET, 27yo) · 179712 transactions — already rostered in this league
-- 11655 Tyrone Tracy (RB, NYG, 26yo) · 174076 transactions
-- 11792 Will Reichard (K, MIN, 25yo) · 169929 transactions — already rostered in this league
-- NYJ New York Jets (DEF, NYJ) · 167108 transactions
-- 11637 Keon Coleman (WR, BUF, 23yo) · 151560 transactions — already rostered in this league
-- 11783 Ryan Flournoy (WR, DAL, 26yo) · 142784 transactions — already rostered in this league
-- 9230 Tanner McKee (QB, PHI, 26yo) · 142736 transactions
-- 11565 J.J. McCarthy (QB, NYG, 23yo) · 129129 transactions — already rostered in this league
-- 8135 Treylon Burks (WR, WAS, 26yo) · 116942 transactions
-- 8116 Pierre Strong (RB, GB, 27yo) · 111753 transactions
-- 11586 Blake Corum (RB, LAR, 25yo) · 97392 transactions — already rostered in this league
-- 12530 Travis Hunter (DB, JAX, 23yo) · 95676 transactions — already rostered in this league
+- 13276 Omar Cooper (WR, NYJ, 22yo, rookie) · 4747440 transactions — already rostered in this league
+- CLE Cleveland Browns (DEF, CLE) · 1911567 transactions
+- 12718 Konata Mumpfield (WR, LAR, 23yo) · 1531089 transactions
+- 5849 Kyler Murray (QB, MIN, 29yo) · 907616 transactions — already rostered in this league
+- 9482 Michael Mayer (TE, LV, 25yo) · 801072 transactions — already rostered in this league
+- 10235 Roschon Johnson (RB, CHI, 25yo) · 715584 transactions
+- 9758 C.J. Stroud (QB, HOU, 25yo) · 707665 transactions — already rostered in this league
+- 6650 Chase McLaughlin (K, TB, 30yo) · 639080 transactions
+- 11655 Tyrone Tracy (RB, NYG, 26yo) · 617982 transactions — already rostered in this league
+- 11539 Jake Bates (K, DET, 27yo) · 589920 transactions — already rostered in this league
+- 8135 Treylon Burks (WR, WAS, 26yo) · 568617 transactions
+- 12487 Terrance Ferguson (TE, LAR, 23yo) — IR · 532448 transactions — already rostered in this league
+- NYJ New York Jets (DEF, NYJ) · 524650 transactions — already rostered in this league
+- 10213 Tre Tucker (WR, LV, 25yo) · 466170 transactions — already rostered in this league
+- MIN Minnesota Vikings (DEF, MIN) · 437940 transactions — already rostered in this league
+- 9502 Tank Dell (WR, HOU, 26yo) — IR · 421480 transactions — already rostered in this league
+- 7553 Kyle Pitts (TE, ATL, 26yo) · 400246 transactions — already rostered in this league
+- 11792 Will Reichard (K, MIN, 25yo) · 369588 transactions — already rostered in this league
+- 3271 Tyler Higbee (TE, LAR, 33yo) · 346410 transactions — already rostered in this league
+- 11610 Malik Washington (WR, MIA, 25yo) · 303448 transactions — already rostered in this league
+- 9230 Tanner McKee (QB, PHI, 26yo) · 290760 transactions — already rostered in this league
+- 13296 Caleb Douglas (WR, MIA, 23yo, rookie) — Questionable · 270952 transactions — already rostered in this league
+- 8116 Pierre Strong (RB, GB, 27yo) · 266193 transactions
+- 8408 Jordan Mason (RB, MIN, 27yo) — IR · 244740 transactions — already rostered in this league
+- 11783 Ryan Flournoy (WR, DAL, 26yo) · 232984 transactions — already rostered in this league
 
 ## Most dropped across all of Sleeper (last 24h)
 
 Activity across every Sleeper league, not just this one — a signal about which players are being picked up generally.
 
-- 11581 MarShawn Lloyd (RB, GB, 25yo) · 581040 transactions — already rostered in this league
-- 6904 Jalen Hurts (QB, PHI, 28yo) — IR · 482396 transactions — already rostered in this league
-- JAX Jacksonville Jaguars (DEF, JAX) · 325788 transactions
-- 9511 Keaton Mitchell (RB, LAC, 24yo) · 315792 transactions — already rostered in this league
-- 3271 Tyler Higbee (TE, LAR, 33yo) · 313902 transactions — already rostered in this league
-- NE New England Patriots (DEF, NE) · 283325 transactions — already rostered in this league
-- 8121 Romeo Doubs (WR, NE, 26yo) — IR · 271208 transactions — already rostered in this league
-- 13150 Darius Cooper (WR, PHI, 24yo) · 265881 transactions — already rostered in this league
-- 11435 Emanuel Wilson (RB, SEA, 27yo) · 250434 transactions — already rostered in this league
-- 5927 Terry McLaurin (WR, WAS, 31yo) — Out · 244170 transactions — already rostered in this league
-- 12533 Jacory Croskey-Merritt (RB, WAS, 25yo) — IR · 240327 transactions — already rostered in this league
-- IND Indianapolis Colts (DEF, IND) · 226968 transactions — already rostered in this league
-- 2505 Darren Waller (TE, CAR, 34yo) · 202059 transactions
-- 650 Nick Folk (K, ATL, 41yo) · 199308 transactions — already rostered in this league
-- 3321 Unknown player 3321 (?, no NFL team) · 179712 transactions
-- 12711 Tyler Loop (K, BAL, 25yo) · 168492 transactions
-- 8132 Tyler Allgeier (RB, ARI, 26yo) · 164795 transactions — already rostered in this league
-- 2133 Davante Adams (WR, LAR, 33yo) — Out · 155872 transactions — already rostered in this league
-- 9480 Brenton Strange (TE, JAX, 25yo) · 146988 transactions — already rostered in this league
-- 7528 Najee Harris (RB, NYG, 28yo) · 138270 transactions
-- 11439 Jaleel McLaughlin (RB, CLE, 26yo) · 124265 transactions
-- 7042 Tyler Bass (K, BUF, 29yo) · 120130 transactions
-- 11630 Roman Wilson (WR, PIT, 25yo) — IR · 115902 transactions — already rostered in this league
-- 5045 Courtland Sutton (WR, DEN, 31yo) · 114003 transactions — already rostered in this league
-- 5012 Mark Andrews (TE, BAL, 31yo) · 113481 transactions — already rostered in this league
+- 11581 MarShawn Lloyd (RB, GB, 25yo) · 1326438 transactions — already rostered in this league
+- 5927 Terry McLaurin (WR, WAS, 31yo) — Out · 1278102 transactions — already rostered in this league
+- JAX Jacksonville Jaguars (DEF, JAX) · 765444 transactions
+- 9511 Keaton Mitchell (RB, LAC, 24yo) · 687033 transactions — already rostered in this league
+- NE New England Patriots (DEF, NE) · 652617 transactions
+- 11435 Emanuel Wilson (RB, SEA, 27yo) · 594864 transactions — already rostered in this league
+- 7528 Unknown player 7528 (?, no NFL team) · 517805 transactions
+- IND Indianapolis Colts (DEF, IND) · 508620 transactions — already rostered in this league
+- 13150 Darius Cooper (WR, PHI, 24yo) · 472598 transactions — already rostered in this league
+- 3271 Tyler Higbee (TE, LAR, 33yo) · 467775 transactions — already rostered in this league
+- 8121 Romeo Doubs (WR, NE, 26yo) — IR · 463080 transactions — already rostered in this league
+- 11439 Jaleel McLaughlin (RB, CLE, 26yo) · 398290 transactions
+- 2505 Darren Waller (TE, CAR, 34yo) · 392589 transactions
+- 650 Nick Folk (K, ATL, 41yo) · 375006 transactions — already rostered in this league
+- 9480 Brenton Strange (TE, JAX, 25yo) · 368901 transactions — already rostered in this league
+- 6904 Jalen Hurts (QB, PHI, 28yo) — IR · 360060 transactions — already rostered in this league
+- 8132 Tyler Allgeier (RB, ARI, 26yo) · 357630 transactions — already rostered in this league
+- 12711 Tyler Loop (K, BAL, 25yo) · 335706 transactions
+- 12533 Jacory Croskey-Merritt (RB, WAS, 25yo) — IR · 329274 transactions — already rostered in this league
+- 7042 Tyler Bass (K, BUF, 29yo) · 326315 transactions
+- 1166 Kirk Cousins (QB, LV, 38yo) · 272200 transactions — already rostered in this league
+- 11647 Kimani Vidal (RB, LAC, 25yo) · 270490 transactions — already rostered in this league
+- 3321 Unknown player 3321 (?, no NFL team) · 265128 transactions
+- 8129 Dameon Pierce (RB, PHI, 26yo) · 255136 transactions — already rostered in this league
+- 13330 Kenyon Sadiq (TE, NYJ, 21yo, rookie) · 254070 transactions — already rostered in this league
 
 ## Reference
 
@@ -1009,7 +1018,7 @@ Say so rather than inventing an answer if asked about:
 
 ### Checking this page was actually read
 
-If someone doubts the answer came from this document, the generated timestamp is `2026-10-20T14:21:22Z`. Quoting it back proves the page was read.
+If someone doubts the answer came from this document, the generated timestamp is `2026-10-21T14:31:35Z`. Quoting it back proves the page was read.
 
 ### Fetching newer data directly
 
